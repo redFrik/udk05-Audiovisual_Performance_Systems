@@ -1,0 +1,28 @@
+#N canvas 140 289 504 520 16;
+#X declare -lib mrpeach;
+#X obj 107 45 import mrpeach;
+#X obj 111 119 udpreceive 8876;
+#X obj 110 167 unpackOSC;
+#X obj 108 221 print there;
+#X text 134 11 simple receive;
+#X text 286 116 port;
+#X obj 93 388 udpsend;
+#X obj 93 342 packOSC;
+#X msg 124 474 disconnect;
+#X msg 127 440 connect 127.0.0.1 8877;
+#X msg 199 348 send /hello here is there;
+#X obj 76 225 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 260 206 route /myfreq /hallo;
+#X floatatom 253 242 5 0 0 0 - - -;
+#X floatatom 348 244 5 0 0 0 - - -;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 11 0;
+#X connect 2 0 12 0;
+#X connect 7 0 6 0;
+#X connect 8 0 6 0;
+#X connect 9 0 6 0;
+#X connect 10 0 7 0;
+#X connect 12 0 13 0;
+#X connect 12 1 14 0;

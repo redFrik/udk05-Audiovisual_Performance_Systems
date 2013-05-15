@@ -1,0 +1,114 @@
+#N canvas 740 100 679 581 10;
+#X obj 220 37 gemhead;
+#X obj 126 371 gemwin;
+#X msg 181 357 create;
+#X msg 181 378 destroy;
+#X obj 129 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 122 189 pix_texture;
+#X floatatom 148 245 5 0 0 0 - - -;
+#X floatatom 186 245 5 0 0 0 - - -;
+#X msg 294 38 dimen 640 480;
+#X msg 180 311 dimen 640 480;
+#X msg 333 189 5.3334;
+#X msg 334 235 -5.3334;
+#X obj 123 215 rectangle;
+#X obj 48 84 pix_delay 100;
+#X floatatom 96 55 5 0 0 0 - - -;
+#X obj 126 163 pix_mix;
+#X obj 65 16 hsl 128 15 0 1 0 0 empty empty mix -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 367 119 timer;
+#X obj 367 90 t b b;
+#X floatatom 370 148 5 0 0 0 - - -;
+#X obj 215 64 pix_video;
+#X msg 18 148 horizontal;
+#X msg 14 170 vertical;
+#X obj 54 111 pix_flip;
+#X obj 492 220 pix_info;
+#X floatatom 493 251 5 0 0 0 - - -;
+#X floatatom 508 280 5 0 0 0 - - -;
+#X floatatom 539 311 5 0 0 0 - - -;
+#X msg 294 16 dimen 720 576;
+#X floatatom 567 335 5 0 0 0 - - -;
+#X floatatom 550 258 5 0 0 0 - - -;
+#X msg 334 255 -4;
+#X msg 183 332 dimen 720 576;
+#X msg 520 500 record \$1;
+#X obj 518 479 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 456 435 pix_write;
+#X obj 390 464 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 539 469 auto \$1;
+#X obj 539 447 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 414 464 dialog;
+#X obj 341 522 metro 40;
+#X obj 329 497 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 389 494 pix_record;
+#X msg 191 426 frame 60;
+#X msg 191 403 frame 25;
+#X msg 427 529 file /Users/ifields/Desktop/test2.mov;
+#X msg 333 209 4;
+#X obj 276 117 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 275 137 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 274 157 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 274 176 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 0 0 18 0;
+#X connect 0 0 20 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
+#X connect 5 0 12 0;
+#X connect 6 0 12 1;
+#X connect 7 0 12 2;
+#X connect 8 0 20 0;
+#X connect 9 0 1 0;
+#X connect 10 0 6 0;
+#X connect 11 0 6 0;
+#X connect 13 0 23 0;
+#X connect 14 0 13 1;
+#X connect 15 0 5 0;
+#X connect 16 0 15 2;
+#X connect 17 0 19 0;
+#X connect 18 0 17 0;
+#X connect 18 1 17 1;
+#X connect 20 0 13 0;
+#X connect 20 0 15 1;
+#X connect 20 0 42 0;
+#X connect 21 0 23 0;
+#X connect 23 0 15 0;
+#X connect 24 0 25 0;
+#X connect 24 1 26 0;
+#X connect 24 2 27 0;
+#X connect 24 3 29 0;
+#X connect 24 4 30 0;
+#X connect 28 0 20 0;
+#X connect 31 0 7 0;
+#X connect 32 0 1 0;
+#X connect 33 0 42 0;
+#X connect 34 0 33 0;
+#X connect 36 0 42 0;
+#X connect 37 0 42 0;
+#X connect 38 0 37 0;
+#X connect 39 0 42 0;
+#X connect 40 0 42 0;
+#X connect 41 0 40 0;
+#X connect 43 0 1 0;
+#X connect 44 0 1 0;
+#X connect 45 0 42 0;
+#X connect 46 0 7 0;
+#X connect 47 0 46 0;
+#X connect 47 0 10 0;
+#X connect 48 0 11 0;
+#X connect 48 0 46 0;
+#X connect 49 0 10 0;
+#X connect 49 0 31 0;
+#X connect 50 0 11 0;
+#X connect 50 0 31 0;

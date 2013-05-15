@@ -1,0 +1,55 @@
+#N canvas 666 252 739 453 10;
+#X declare -lib mrpeach;
+#X obj 98 21 papes_input_camera;
+#X obj 103 393 gemwin;
+#X msg 129 369 destroy;
+#X msg 130 348 create;
+#X obj 103 371 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 98 224 papes_effect_delay;
+#X obj 98 171 papes_effect_flip;
+#X obj 98 113 papes_effect_sample;
+#X msg 191 377 frame 60;
+#X obj 195 356 loadbang;
+#X obj 98 286 papes_output_rectangle;
+#X msg 191 397 dimen 640 480;
+#X obj 340 74 unpackOSC;
+#X obj 498 35 spigot;
+#X obj 542 35 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 498 54 print debug_oscIn;
+#X obj 150 89 route xfade;
+#X obj 140 149 route xfade;
+#X obj 147 203 route xfade;
+#X text 366 333 same as papes_0 but with osc network control instead
+;
+#X obj 340 108 route /effect_sample /effect_flip /effect_delay /output_rectangle
+;
+#X obj 340 51 udpreceive 9955;
+#X obj 340 23 import mrpeach;
+#X connect 0 0 7 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
+#X connect 5 0 10 0;
+#X connect 6 0 5 0;
+#X connect 7 0 6 0;
+#X connect 8 0 1 0;
+#X connect 9 0 8 0;
+#X connect 9 0 11 0;
+#X connect 11 0 1 0;
+#X connect 12 0 13 0;
+#X connect 12 0 20 0;
+#X connect 13 0 15 0;
+#X connect 14 0 13 1;
+#X connect 16 0 7 1;
+#X connect 16 1 7 2;
+#X connect 17 0 6 1;
+#X connect 17 1 6 2;
+#X connect 18 0 5 1;
+#X connect 18 1 5 2;
+#X connect 20 0 16 0;
+#X connect 20 1 17 0;
+#X connect 20 2 18 0;
+#X connect 20 3 10 1;
+#X connect 21 0 12 0;

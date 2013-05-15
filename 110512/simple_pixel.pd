@@ -1,0 +1,77 @@
+#N canvas 633 22 733 510 10;
+#X obj 124 23 gemhead;
+#X obj 76 402 gemwin;
+#X msg 83 374 create;
+#X msg 135 374 destroy;
+#X obj 60 376 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 125 263 rectangle 4 3;
+#X obj 125 231 pix_texture;
+#X obj 196 177 pix_data;
+#X obj 124 79 pix_video;
+#X obj 204 141 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 274 197 5 0 0 0 - - -;
+#X floatatom 231 136 5 0 0 0 - - -;
+#X floatatom 270 136 5 0 0 0 - - -;
+#X obj 160 117 t b a;
+#X obj 237 237 unpack f f f;
+#X floatatom 245 261 5 0 0 0 - - -;
+#X floatatom 284 261 5 0 0 0 - - -;
+#X floatatom 321 264 5 0 0 0 - - -;
+#X obj 294 394 color;
+#X obj 281 342 gemhead;
+#X msg 344 331 \$1 \$1 \$1;
+#X obj 240 88 loadbang;
+#X msg 237 114 0.5;
+#X obj 293 422 square 1;
+#X obj 503 179 mapping/smooth;
+#X obj 506 205 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6142 1;
+#X obj 500 69 -;
+#X obj 497 29 t f f;
+#X obj 503 96 abs;
+#X obj 505 120 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 100 1;
+#X obj 501 336 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -258113
+-1 -1 8168 1;
+#X obj 502 355 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -4034
+-1 -1 6425 1;
+#X obj 503 376 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -4160
+-1 -1 5777 1;
+#X msg 173 51 dimen 80 60;
+#X connect 0 0 8 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
+#X connect 6 0 5 0;
+#X connect 7 1 14 0;
+#X connect 7 2 10 0;
+#X connect 7 2 20 0;
+#X connect 8 0 6 0;
+#X connect 8 0 13 0;
+#X connect 9 0 7 0;
+#X connect 10 0 24 0;
+#X connect 10 0 27 0;
+#X connect 11 0 7 2;
+#X connect 12 0 7 3;
+#X connect 13 0 7 0;
+#X connect 13 1 7 1;
+#X connect 14 0 15 0;
+#X connect 14 1 16 0;
+#X connect 14 2 17 0;
+#X connect 15 0 30 0;
+#X connect 16 0 31 0;
+#X connect 17 0 32 0;
+#X connect 18 0 23 0;
+#X connect 19 0 18 0;
+#X connect 20 0 18 1;
+#X connect 21 0 22 0;
+#X connect 22 0 11 0;
+#X connect 22 0 12 0;
+#X connect 24 0 25 0;
+#X connect 26 0 28 0;
+#X connect 27 0 26 1;
+#X connect 27 1 26 0;
+#X connect 28 0 29 0;
+#X connect 33 0 8 0;

@@ -1,0 +1,330 @@
+#N canvas 146 22 1229 840 16;
+#X declare -lib mrpeach;
+#X obj 255 15 import mrpeach;
+#X obj 76 29 unpackOSC;
+#X obj 6 248 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12400 1;
+#X obj 3 362 triggerSynth;
+#X obj 14 270 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4700 1;
+#X obj 25 290 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5400 1;
+#X obj 37 310 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7600 1;
+#X obj 3 204 route midi amp pan dur trig;
+#X obj 99 332 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 284 248 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 800 1;
+#X obj 281 362 triggerSynth;
+#X obj 292 270 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X obj 303 290 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6100 1;
+#X obj 315 310 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7000 1;
+#X obj 281 204 route midi amp pan dur trig;
+#X obj 377 332 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 563 248 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 560 362 triggerSynth;
+#X obj 571 270 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3500 1;
+#X obj 582 290 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 200 1;
+#X obj 594 310 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 10000 1;
+#X obj 560 204 route midi amp pan dur trig;
+#X obj 656 332 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 76 56 route /johann /philipp /annie /sascha /tobi /tortoise
+/F /Astrid /olga /izm /natalia /mari /huhu;
+#X obj 76 2 udpreceive 8876;
+#X obj 306 -17 print;
+#X msg 708 -4 send /johann amp 50;
+#X msg 712 30 send /johann midi 60;
+#X msg 712 60 send /johann trig;
+#X msg 710 89 send /johann dur 40;
+#X obj 1 494 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12600 1;
+#X obj -2 608 triggerSynth;
+#X obj 9 516 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 20 536 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 32 556 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj -2 450 route midi amp pan dur trig;
+#X obj 94 578 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 291 492 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5500 1;
+#X obj 288 606 triggerSynth;
+#X obj 299 514 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 8000 1;
+#X obj 310 534 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 322 554 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X obj 288 448 route midi amp pan dur trig;
+#X obj 384 576 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 572 493 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 10000 1;
+#X obj 569 607 triggerSynth;
+#X obj 580 515 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 10000 1;
+#X obj 591 535 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 200 1;
+#X obj 603 555 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 569 449 route midi amp pan dur trig;
+#X obj 665 577 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -2 722 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7900 1;
+#X obj -5 836 triggerSynth;
+#X obj 6 744 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5000 1;
+#X obj 17 764 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X obj 29 784 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1000 1;
+#X obj -5 678 route midi amp pan dur trig;
+#X obj 91 806 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 288 720 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6000 1;
+#X obj 285 834 triggerSynth;
+#X obj 296 742 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7000 1;
+#X obj 307 762 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 319 782 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 285 676 route midi amp pan dur trig;
+#X obj 381 804 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 569 721 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 566 835 triggerSynth;
+#X obj 577 743 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5000 1;
+#X obj 588 763 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 600 783 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5000 1;
+#X obj 566 677 route midi amp pan dur trig;
+#X obj 662 805 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 66 179 johann;
+#X text 310 177 philipp;
+#X text 601 177 annie;
+#X text 67 426 sascha;
+#X text 374 423 tobi;
+#X text 643 421 tortoise;
+#X text 46 653 F;
+#X text 366 647 Astrid;
+#X text 656 654 olga;
+#X obj 933 55 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1500 1;
+#X obj 930 169 triggerSynth;
+#X obj 941 77 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 11771 1;
+#X obj 952 97 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 964 117 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1000 1;
+#X obj 930 11 route midi amp pan dur trig;
+#X obj 1026 139 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 971 -16 izm;
+#X obj 929 269 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3000 1;
+#X obj 926 383 triggerSynth;
+#X obj 937 291 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 8100 1;
+#X obj 948 311 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 3800 1;
+#X obj 960 331 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5200 1;
+#X obj 926 225 route midi amp pan dur trig;
+#X text 967 198 natalia;
+#X obj 929 497 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 8300 1;
+#X obj 926 611 triggerSynth;
+#X obj 937 519 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7200 1;
+#X obj 948 539 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 960 559 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6600 1;
+#X obj 926 453 route midi amp pan dur trig;
+#X text 967 426 mari;
+#X obj 924 721 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 11800 1;
+#X obj 921 835 triggerSynth;
+#X obj 932 743 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 8000 1;
+#X obj 943 763 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4500 1;
+#X obj 955 783 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4500 1;
+#X obj 921 677 route midi amp pan dur trig;
+#X text 962 650 huhu;
+#X msg 713 149 send /johann pan \$1;
+#X floatatom 723 120 5 0 0 0 - - -;
+#X obj 1040 359 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1038 590 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1032 812 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 1 0 23 0;
+#X connect 1 0 25 0;
+#X connect 2 0 3 0;
+#X connect 4 0 3 1;
+#X connect 5 0 3 2;
+#X connect 6 0 3 3;
+#X connect 7 0 2 0;
+#X connect 7 1 4 0;
+#X connect 7 2 5 0;
+#X connect 7 3 6 0;
+#X connect 7 4 8 0;
+#X connect 8 0 3 4;
+#X connect 9 0 10 0;
+#X connect 11 0 10 1;
+#X connect 12 0 10 2;
+#X connect 13 0 10 3;
+#X connect 14 0 9 0;
+#X connect 14 1 11 0;
+#X connect 14 2 12 0;
+#X connect 14 3 13 0;
+#X connect 14 4 15 0;
+#X connect 15 0 10 4;
+#X connect 16 0 17 0;
+#X connect 18 0 17 1;
+#X connect 19 0 17 2;
+#X connect 20 0 17 3;
+#X connect 21 0 16 0;
+#X connect 21 1 18 0;
+#X connect 21 2 19 0;
+#X connect 21 3 20 0;
+#X connect 21 4 22 0;
+#X connect 22 0 17 4;
+#X connect 23 0 7 0;
+#X connect 23 1 14 0;
+#X connect 23 2 21 0;
+#X connect 23 3 35 0;
+#X connect 23 4 42 0;
+#X connect 23 5 49 0;
+#X connect 23 6 56 0;
+#X connect 23 7 63 0;
+#X connect 23 8 70 0;
+#X connect 23 9 86 0;
+#X connect 23 10 94 0;
+#X connect 23 11 101 0;
+#X connect 23 12 108 0;
+#X connect 24 0 1 0;
+#X connect 30 0 31 0;
+#X connect 32 0 31 1;
+#X connect 33 0 31 2;
+#X connect 34 0 31 3;
+#X connect 35 0 30 0;
+#X connect 35 1 32 0;
+#X connect 35 2 33 0;
+#X connect 35 3 34 0;
+#X connect 35 4 36 0;
+#X connect 36 0 31 4;
+#X connect 37 0 38 0;
+#X connect 39 0 38 1;
+#X connect 40 0 38 2;
+#X connect 41 0 38 3;
+#X connect 42 0 37 0;
+#X connect 42 1 39 0;
+#X connect 42 2 40 0;
+#X connect 42 3 41 0;
+#X connect 42 4 43 0;
+#X connect 43 0 38 4;
+#X connect 44 0 45 0;
+#X connect 46 0 45 1;
+#X connect 47 0 45 2;
+#X connect 48 0 45 3;
+#X connect 49 0 44 0;
+#X connect 49 1 46 0;
+#X connect 49 2 47 0;
+#X connect 49 3 48 0;
+#X connect 49 4 50 0;
+#X connect 50 0 45 4;
+#X connect 51 0 52 0;
+#X connect 53 0 52 1;
+#X connect 54 0 52 2;
+#X connect 55 0 52 3;
+#X connect 56 0 51 0;
+#X connect 56 1 53 0;
+#X connect 56 2 54 0;
+#X connect 56 3 55 0;
+#X connect 56 4 57 0;
+#X connect 57 0 52 4;
+#X connect 58 0 59 0;
+#X connect 60 0 59 1;
+#X connect 61 0 59 2;
+#X connect 62 0 59 3;
+#X connect 63 0 58 0;
+#X connect 63 1 60 0;
+#X connect 63 2 61 0;
+#X connect 63 3 62 0;
+#X connect 63 4 64 0;
+#X connect 64 0 59 4;
+#X connect 65 0 66 0;
+#X connect 67 0 66 1;
+#X connect 68 0 66 2;
+#X connect 69 0 66 3;
+#X connect 70 0 65 0;
+#X connect 70 1 67 0;
+#X connect 70 2 68 0;
+#X connect 70 3 69 0;
+#X connect 70 4 71 0;
+#X connect 71 0 66 4;
+#X connect 81 0 82 0;
+#X connect 83 0 82 1;
+#X connect 84 0 82 2;
+#X connect 85 0 82 3;
+#X connect 86 0 81 0;
+#X connect 86 1 83 0;
+#X connect 86 2 84 0;
+#X connect 86 3 85 0;
+#X connect 86 4 87 0;
+#X connect 87 0 82 4;
+#X connect 89 0 90 0;
+#X connect 91 0 90 1;
+#X connect 92 0 90 2;
+#X connect 93 0 90 3;
+#X connect 94 0 89 0;
+#X connect 94 1 91 0;
+#X connect 94 2 92 0;
+#X connect 94 3 93 0;
+#X connect 94 4 112 0;
+#X connect 96 0 97 0;
+#X connect 98 0 97 1;
+#X connect 99 0 97 2;
+#X connect 100 0 97 3;
+#X connect 101 0 96 0;
+#X connect 101 1 98 0;
+#X connect 101 2 99 0;
+#X connect 101 3 100 0;
+#X connect 101 4 113 0;
+#X connect 103 0 104 0;
+#X connect 105 0 104 1;
+#X connect 106 0 104 2;
+#X connect 107 0 104 3;
+#X connect 108 0 103 0;
+#X connect 108 1 105 0;
+#X connect 108 2 106 0;
+#X connect 108 3 107 0;
+#X connect 108 4 114 0;
+#X connect 111 0 110 0;
+#X connect 112 0 90 4;
+#X connect 113 0 97 4;
+#X connect 114 0 104 4;

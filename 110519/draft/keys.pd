@@ -1,0 +1,22 @@
+#N canvas 575 55 663 634 16;
+#X obj 93 120 myabs-bufwrite buffer0 100;
+#X obj 92 75 myabs-bufread buffer0 100;
+#X obj 215 360 myabs-bufread buffer1 100;
+#X obj 217 405 myabs-bufwrite buffer1 100;
+#X obj 52 293 key;
+#X floatatom 49 334 5 0 0 0 - - -;
+#X obj 38 422 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 76 415 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 42 377 sel 65 83 68;
+#X obj 112 414 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 27 450 A;
+#X text 65 446 S;
+#X text 112 444 D;
+#X connect 4 0 5 0;
+#X connect 5 0 8 0;
+#X connect 8 0 6 0;
+#X connect 8 1 7 0;
+#X connect 8 2 9 0;

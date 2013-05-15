@@ -1,0 +1,15 @@
+#N canvas 827 136 480 434 10;
+#X declare -lib mrpeach;
+#X obj 135 21 import mrpeach;
+#X obj 153 172 udpsend;
+#X msg 151 84 connect 127.0.0.1 8877;
+#X msg 191 125 send /addy 1 2 3;
+#X obj 192 146 packOSC;
+#X obj 161 322 unpackOSC;
+#X obj 169 284 udpreceive 8876;
+#X obj 165 353 print there;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X connect 5 0 7 0;
+#X connect 6 0 5 0;

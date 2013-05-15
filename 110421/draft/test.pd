@@ -1,0 +1,15 @@
+#N canvas 663 80 682 406 24;
+#X obj 71 46 adc~;
+#X obj 55 295 dac~;
+#X obj 60 170 delay~ 44100;
+#X floatatom 224 121 10 0 0 0 - - -;
+#X obj 225 73 * 44100;
+#X floatatom 225 19 5 0 1 0 - - -;
+#X text 366 52 shift+click and drag;
+#X text 304 15 delaytime in sec (0-1);
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 2 0 1 1;
+#X connect 3 0 2 1;
+#X connect 4 0 3 0;
+#X connect 5 0 4 0;

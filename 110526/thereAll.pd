@@ -1,0 +1,89 @@
+#N canvas 237 140 969 524 16;
+#X declare -lib mrpeach;
+#X obj 107 45 import mrpeach;
+#X obj 31 171 udpreceive 8876;
+#X obj 31 205 unpackOSC;
+#X obj 29 242 print there;
+#X text 134 11 simple receive;
+#X obj 93 388 udpsend;
+#X obj 93 342 packOSC;
+#X msg 124 474 disconnect;
+#X msg 127 440 connect 127.0.0.1 8877;
+#X msg 199 348 send /hello here is there;
+#X obj 5 233 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 132 118 print from_johann;
+#X obj 182 214 print from_philipp;
+#X obj 139 106 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 199 202 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 243 254 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 226 265 print from_annie;
+#X obj 347 116 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 330 127 print from_sascha;
+#X obj 421 192 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 404 203 print from_tobi;
+#X obj 505 250 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 487 261 print from_tortoise;
+#X obj 533 300 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 515 311 print from_F;
+#X obj 596 132 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 578 143 print from_Astrid;
+#X obj 601 190 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 583 201 print from_olga;
+#X obj 682 284 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 664 295 print from_izm;
+#X obj 781 125 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 763 136 print from_natalia;
+#X obj 751 234 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 733 245 print from_mari;
+#X obj 328 14 route /johann /philipp /annie /sascha /tobi /tortoise
+/F /Astrid /olga /izm /natalia /mari /huhu;
+#X obj 756 68 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 738 79 print from_huhu;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 10 0;
+#X connect 2 0 35 0;
+#X connect 6 0 5 0;
+#X connect 7 0 5 0;
+#X connect 8 0 5 0;
+#X connect 9 0 6 0;
+#X connect 35 0 11 0;
+#X connect 35 0 13 0;
+#X connect 35 1 14 0;
+#X connect 35 1 12 0;
+#X connect 35 2 15 0;
+#X connect 35 2 16 0;
+#X connect 35 3 17 0;
+#X connect 35 3 18 0;
+#X connect 35 4 19 0;
+#X connect 35 4 20 0;
+#X connect 35 5 21 0;
+#X connect 35 5 22 0;
+#X connect 35 6 24 0;
+#X connect 35 6 23 0;
+#X connect 35 7 25 0;
+#X connect 35 7 26 0;
+#X connect 35 8 27 0;
+#X connect 35 8 28 0;
+#X connect 35 9 30 0;
+#X connect 35 9 29 0;
+#X connect 35 10 32 0;
+#X connect 35 10 31 0;
+#X connect 35 11 34 0;
+#X connect 35 11 33 0;
+#X connect 35 12 36 0;
+#X connect 35 12 37 0;
