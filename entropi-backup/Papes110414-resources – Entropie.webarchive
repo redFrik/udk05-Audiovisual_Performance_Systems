@@ -1,0 +1,4995 @@
+bplist00“L_WebSubresources_WebMainResourceØ#',07;?CG‘	
+_WebResourceData^WebResourceURL_WebResourceMIMEType_WebResourceResponseOq˝/**
+ * Stylesheet for screen/projection.  All rules not marked media-specific are
+ * shared with handheld.css and should be updated in tandem.  The rules can't
+ * be in the same file because old browsers like IE5 won't obey @media rules.
+ *
+ * Rules that are screen/projection-specific are marked with commented-out
+ * @media rules and indentation.
+ */
+ 
+a {
+  text-decoration: none;
+}
+
+/* @media screen, projection { */
+	#column-content {
+		width: 100%;
+		float: right;
+		margin: 0 0 .6em -12.2em;
+		padding: 0;
+	}
+	#content {
+		margin: 2.8em 0 0 12.2em;
+		padding: 0 1em 1.5em 1em;
+		position: relative;
+		z-index: 2;
+	}
+	#column-one {
+		padding-top: 160px;
+	}
+/* } */
+#content {
+	background: white;
+	color: black;
+	border: 1px solid #aaa;
+	border-right: none;
+	line-height: 1.5em;
+}
+
+#content a {
+  text-decoration: none;
+}
+/* the left column width is specified in class .portlet */
+
+/* Font size:
+** We take advantage of keyword scaling- browsers won't go below 9px
+** More at http://www.w3.org/2003/07/30-font-size
+** http://style.cleverchimp.com/font_size_intervals/altintervals.html
+*/
+
+body {
+	font: x-small sans-serif;
+	font-family: Verdana;
+	background-color: #FFFFFF;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+/* scale back up to a sane default */
+#globalWrapper {
+	font-size: 127%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.visualClear {
+	clear: both;
+}
+
+/* general styles */
+
+table {
+	font-size: 100%;
+	color: black;
+	/* we don't want the bottom borders of <h2>s to be visible through
+	   floated tables */
+	background-color: white;
+}
+a {
+	text-decoration: none;
+	color: #002bb8;
+	background: none;
+}
+a:visited {
+	color: #5a3696;
+}
+a:active {
+	color: #faa700;
+}
+a:hover {
+	text-decoration: underline;
+}
+a.stub {
+	color: #772233;
+}
+a.new, #p-personal a.new {
+	color: #ba0000;
+}
+a.new:visited, #p-personal a.new:visited {
+	color: #a55858;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+/* @media screen, projection { */
+	p {
+		margin: .4em 0 .5em 0;
+		line-height: 1.5em;
+	}
+/* } */
+p img {
+	margin: 0;
+}
+
+hr {
+	height: 1px;
+	color: #aaa;
+	background-color: #aaa;
+	border: 0;
+	margin: .2em 0 .2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: black;
+	background: none;
+	font-weight: normal;
+	margin: 0;
+	padding-top: .5em;
+	padding-bottom: .17em;
+	border-bottom: 3px solid #CCCCCC;
+}
+h1 { font-size: 188%; }
+h1 .editsection { font-size: 53%; }
+h2 { font-size: 150%; }
+h2 .editsection { font-size: 67%; }
+h3, h4, h5, h6 {
+	border-bottom: none;
+	font-weight: bold;
+}
+h3 { font-size: 132%; }
+h3 .editsection { font-size: 76%; font-weight: normal; }
+h4 { font-size: 116%; }
+h4 .editsection { font-size: 86%; font-weight: normal; }
+h5 { font-size: 100%; }
+h5 .editsection { font-weight: normal; }
+h6 { font-size: 80%;  }
+h6 .editsection { font-size: 125%; font-weight: normal; }
+
+.editsection {
+	float: right;
+	margin-left: 5px;
+}
+
+ul {
+	line-height: 1.5em;
+	list-style-type: square;
+	margin: .3em 0 0 1.5em;
+	padding: 0;
+	list-style-image: url(bullet.gif);
+}
+ol {
+	line-height: 1.5em;
+	margin: .3em 0 0 3.2em;
+	padding: 0;
+	list-style-image: none;
+}
+li {
+	margin-bottom: .1em;
+}
+dt {
+	font-weight: bold;
+	margin-bottom: .1em;
+}
+dl {
+	margin-top: .2em;
+	margin-bottom: .5em;
+}
+dd {
+	line-height: 1.5em;
+	margin-left: 2em;
+	margin-bottom: .1em;
+}
+
+fieldset {
+	border: 1px solid #2f6fab;
+	margin: 1em 0 1em 0;
+	padding: 0 1em 1em;
+	line-height: 1.5em;
+}
+legend {
+	padding: .5em;
+	font-size: 95%;
+}
+form {
+	border: none;
+	margin: 0;
+}
+
+textarea {
+	width: 100%;
+	padding: .1em;
+}
+
+input.historysubmit {
+	padding: 0 .3em .3em .3em !important;
+	font-size: 94%;
+	cursor: pointer;
+	height: 1.7em !important;
+	margin-left: 1.6em;
+}
+select {
+	vertical-align: top;
+}
+abbr, acronym, .explain {
+	border-bottom: 1px dotted black;
+	color: black;
+	background: none;
+	cursor: help;
+}
+q {
+	font-family: Times, "Times New Roman", serif;
+	font-style: italic;
+}
+/* disabled for now
+blockquote {
+	font-family: Times, "Times New Roman", serif;
+	font-style: italic;
+}*/
+code {
+	background-color: #f9f9f9;
+}
+pre {
+	padding: 1em;
+	border: 1px dashed #2f6fab;
+	color: black;
+	background-color: #f9f9f9;
+	line-height: 1.1em;
+}
+
+/*
+** the main content area
+*/
+
+/* @media screen, projection { */
+	#siteSub {
+		display: none;
+	}
+	#jump-to-nav {
+		display: none;
+	}
+/* } */
+
+#contentSub, #contentSub2 {
+	font-size: 84%;
+	line-height: 1.2em;
+	margin: 0 0 1.4em 1em;
+	color: #7d7d7d;
+	width: auto;
+}
+span.subpages {
+	display: block;
+}
+
+/* Some space under the headers in the content area */
+#bodyContent h1, #bodyContent h2 {
+	margin-bottom: .6em;
+}
+#bodyContent h3, #bodyContent h4, #bodyContent h5 {
+	margin-bottom: .3em;
+}
+.firstHeading {
+	margin-bottom: .1em;
+}
+
+/* user notification thing */
+.usermessage {
+	background-color: #ffce7b;
+	border: 1px solid #ffa500;
+	color: black;
+	font-weight: bold;
+	margin: 2em 0 1em;
+	padding: .5em 1em;
+	vertical-align: middle;
+}
+#siteNotice {
+	text-align: center;
+	font-size: 95%;
+	padding: 0 .9em;
+}
+#siteNotice p {
+	margin: 0;
+	padding: 0;
+}
+.error {
+	color: red;
+	font-size: larger;
+}
+.errorbox, .successbox {
+	font-size: larger;
+	border: 2px solid;
+	padding: .5em 1em;
+	float: left;
+	margin-bottom: 2em;
+	color: #000;
+}
+.errorbox {
+	border-color: red;
+	background-color: #fff2f2;
+}
+.successbox {
+	border-color: green;
+	background-color: #dfd;
+}
+.errorbox h2, .successbox h2 {
+	font-size: 1em;
+	font-weight: bold;
+	display: inline;
+	margin: 0 .5em 0 0;
+	border: none;
+}
+
+#catlinks {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	margin-top: 1em;
+	clear: both;
+}
+/* currently unused, intended to be used by a metadata box
+in the bottom-right corner of the content area */
+.documentDescription {
+	/* The summary text describing the document */
+	font-weight: bold;
+	display: block;
+	margin: 1em 0;
+	line-height: 1.5em;
+}
+.documentByLine {
+	text-align: right;
+	font-size: 90%;
+	clear: both;
+	font-weight: normal;
+	color: #76797c;
+}
+
+/* emulate center */
+.center {
+	width: 100%;
+	text-align: center;
+}
+*.center * {
+	margin-left: auto;
+	margin-right: auto;
+}
+/* small for tables and similar */
+.small, .small * {
+	font-size: 94%;
+}
+table.small {
+	font-size: 100%;
+}
+
+/*
+** content styles
+*/
+
+#toc,
+.toc,
+.mw-warning {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+#toc h2,
+.toc h2 {
+	display: inline;
+	border: none;
+	padding: 0;
+	font-size: 100%;
+	font-weight: bold;
+}
+#toc #toctitle,
+.toc #toctitle,
+#toc .toctitle,
+.toc .toctitle {
+	text-align: center;
+}
+#toc ul,
+.toc ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin-left: 0;
+	padding-left: 0;
+	text-align: left;
+}
+#toc ul ul,
+.toc ul ul {
+	margin: 0 0 0 2em;
+}
+#toc .toctoggle,
+.toc .toctoggle {
+	font-size: 94%;
+}
+
+.mw-warning {
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+
+/* images */
+div.floatright, table.floatright {
+	clear: right;
+	float: right;
+	position: relative;
+	margin: 0 0 .5em .5em;
+	border: 0;
+/*
+	border: .5em solid white;
+	border-width: .5em 0 .8em 1.4em;
+*/
+}
+div.floatright p { font-style: italic; }
+div.floatleft, table.floatleft {
+	float: left;
+	clear: left;
+	position: relative;
+	margin: 0 .5em .5em 0;
+	border: 0;
+/*
+	margin: .3em .5em .5em 0;
+	border: .5em solid white;
+	border-width: .5em 1.4em .8em 0;
+*/
+}
+div.floatleft p { font-style: italic; }
+/* thumbnails */
+div.thumb {
+	margin-bottom: .5em;
+	border-style: solid;
+	border-color: white;
+	width: auto;
+}
+div.thumbinner {
+	border: 1px solid #ccc;
+	padding: 3px !important;
+	background-color: #f9f9f9;
+	font-size: 94%;
+	text-align: center;
+	overflow: hidden;
+}
+html .thumbimage {
+	border: 1px solid #ccc;
+}
+html .thumbcaption {
+	border: none;
+	text-align: left;
+	line-height: 1.4em;
+	padding: 3px !important;
+	font-size: 94%;
+}
+div.magnify {
+	float: right;
+	border: none !important;
+	background: none !important;
+}
+div.magnify a, div.magnify img {
+	display: block;
+	border: none !important;
+	background: none !important;
+}
+div.tright {
+	clear: right;
+	float: right;
+	border-width: .5em 0 .8em 1.4em;
+}
+div.tleft {
+	float: left;
+	clear: left;
+	margin-right: .5em;
+	border-width: .5em 1.4em .8em 0;
+}
+
+.hiddenStructure {
+	display: none;
+	speak: none;
+}
+img.tex {
+	vertical-align: middle;
+}
+span.texhtml {
+	font-family: serif;
+}
+
+/* Have a checkered background on images on the description pages and in galleries
+   to make transparency visible
+
+#file img, .gallerybox .thumb img {
+	background: url(Checker-16x16.png) repeat;
+}
+*/
+
+/*
+** classes for special content elements like town boxes
+** intended to be referenced directly from the wiki src
+*/
+
+/*
+** User styles
+*/
+/* table standards */
+table.rimage {
+	float: right;
+	position: relative;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.toccolours {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+div.townBox {
+	position: relative;
+	float: right;
+	background: white;
+	margin-left: 1em;
+	border: 1px solid gray;
+	padding: .3em;
+	width: 200px;
+	overflow: hidden;
+	clear: right;
+}
+div.townBox dl {
+	padding: 0;
+	margin: 0 0 .3em;
+	font-size: 96%;
+}
+div.townBox dl dt {
+	background: none;
+	margin: .4em 0 0;
+}
+div.townBox dl dd {
+	margin: .1em 0 0 1.1em;
+	background-color: #f3f3f3;
+}
+
+/*
+** edit views etc
+*/
+.special li {
+	line-height: 1.4em;
+	margin: 0;
+	padding: 0;
+}
+
+/* Page history styling */
+/* the auto-generated edit comments */
+.autocomment {
+	color: gray;
+}
+#pagehistory span.user {
+	margin-left: 1.4em;
+	margin-right: .4em;
+}
+#pagehistory span.minor {
+	font-weight: bold;
+}
+#pagehistory li {
+	border: 1px solid white;
+}
+#pagehistory li.selected {
+	background-color: #f9f9f9;
+	border: 1px dashed #aaa;
+}
+
+/*
+** Diff rendering
+*/
+table.diff, td.diff-otitle, td.diff-ntitle {
+	background-color: white;
+}
+td.diff-addedline {
+	background: #cfc;
+	font-size: smaller;
+}
+td.diff-deletedline {
+	background: #ffa;
+	font-size: smaller;
+}
+td.diff-context {
+	background: #eee;
+	font-size: smaller;
+}
+.diffchange {
+	color: red;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*
+** keep the whitespace in front of the ^=, hides rule from konqueror
+** this is css3, the validator doesn't like it when validating as css2
+*/
+#bodyContent a.external,
+#bodyContent a[href ^="gopher://"] {
+	background: url(external.png) center right no-repeat;
+	padding-right: 13px;
+}
+#bodyContent a[href ^="https://"],
+.link-https {
+	background: url(lock_icon.gif) center right no-repeat;
+	padding-right: 16px;
+}
+#bodyContent a[href ^="mailto:"],
+.link-mailto {
+	background: url(mail_icon.gif) center right no-repeat;
+	padding-right: 18px;
+}
+#bodyContent a[href ^="news://"] {
+	background: url(news_icon.png) center right no-repeat;
+	padding-right: 18px;
+}
+#bodyContent a[href ^="ftp://"],
+.link-ftp {
+	background: url(file_icon.gif) center right no-repeat;
+	padding-right: 18px;
+}
+#bodyContent a[href ^="irc://"],
+.link-irc {
+	background: url(discussionitem_icon.gif) center right no-repeat;
+	padding-right: 18px;
+}
+#bodyContent a.external[href $=".ogg"], #bodyContent a.external[href $=".OGG"],
+#bodyContent a.external[href $=".mid"], #bodyContent a.external[href $=".MID"],
+#bodyContent a.external[href $=".midi"], #bodyContent a.external[href $=".MIDI"],
+#bodyContent a.external[href $=".mp3"], #bodyContent a.external[href $=".MP3"],
+#bodyContent a.external[href $=".wav"], #bodyContent a.external[href $=".WAV"],
+#bodyContent a.external[href $=".wma"], #bodyContent a.external[href $=".WMA"],
+.link-audio {
+	background: url("audio.png") center right no-repeat;
+	padding-right: 13px;
+}
+#bodyContent a.external[href $=".ogm"], #bodyContent a.external[href $=".OGM"],
+#bodyContent a.external[href $=".avi"], #bodyContent a.external[href $=".AVI"],
+#bodyContent a.external[href $=".mpeg"], #bodyContent a.external[href $=".MPEG"],
+#bodyContent a.external[href $=".mpg"], #bodyContent a.external[href $=".MPG"],
+.link-video {
+	background: url("video.png") center right no-repeat;
+	padding-right: 13px;
+}
+#bodyContent a.external[href $=".pdf"], #bodyContent a.external[href $=".PDF"],
+#bodyContent a.external[href *=".pdf#"], #bodyContent a.external[href *=".PDF#"],
+#bodyContent a.external[href *=".pdf?"], #bodyContent a.external[href *=".PDF?"],
+.link-document {
+	background: url("document.png") center right no-repeat;
+	padding-right: 12px;
+}
+
+/* disable interwiki styling */
+#bodyContent a.extiw,
+#bodyContent a.extiw:active {
+	color: #36b;
+	background: none;
+	padding: 0;
+}
+#bodyContent a.external {
+	color: #36b;
+}
+/* this can be used in the content area to switch off
+special external link styling */
+#bodyContent .plainlinks a {
+	background: none !important;
+	padding: 0 !important;
+}
+/*
+** Structural Elements
+*/
+
+/*
+** general portlet styles (elements in the quickbar)
+*/
+.portlet {
+	border: none;
+	margin: 0 0 .5em;
+	padding: 0;
+	float: none;
+	width: 11.6em;
+	overflow: hidden;
+}
+.portlet h4 {
+	font-size: 95%;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.portlet h5 {
+	background: transparent;
+	padding: 0 1em 0 .5em;
+	display: inline;
+	height: 1em;
+	text-transform: lowercase;
+	font-size: 91%;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.portlet h6 {
+	background: #ffae2e;
+	border: 1px solid #2f6fab;
+	border-style: solid solid none solid;
+	padding: 0 1em 0 1em;
+	text-transform: lowercase;
+	display: block;
+	font-size: 1em;
+	height: 1.2em;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.pBody {
+	font-size: 95%;
+	background-color: white;
+	color: black;
+	border-collapse: collapse;
+	padding: 0 .8em .3em .5em;
+	margin-top: 5px;
+}
+.portlet h1,
+.portlet h2,
+.portlet h3,
+.portlet h4 {
+	margin: 0;
+	padding: 0;
+}
+.portlet ul {
+	line-height: 1.5em;
+	list-style-type: none;
+	list-style-image: none;
+	font-size: 95%;
+	padding: 0;
+	margin: 0;
+	line-height: 15px;
+}
+.portlet li {
+	padding: 0;
+	margin: 0;
+	background-color:#EDEDED;
+	padding-left: 14px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #FFFFFF;
+	vertical-align: middle;
+	width: 140px;
+}
+
+.portlet li a {
+  line-height: 15px;
+  vertical-align: middle;
+  font-size: 10px;
+  font-family: verdana;
+  color: #000000;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.portlet li a:hover {
+  color: #EE1947;
+  text-decoration: none;
+}
+
+/*
+** Logo properties
+*/
+
+/* @media screen, projection { */
+	#p-logo {
+		top: 0;
+		left: 0;
+		position: absolute; /*needed to use z-index */
+		z-index: 3;
+		height: 155px;
+		width: 12em;
+		overflow: visible;
+	}
+	#p-logo h5 {
+		display: none;
+	}
+	#p-logo a,
+	#p-logo a:hover {
+		display: block;
+		height: 155px;
+		width: 12.2em;
+		background-repeat: no-repeat;
+		background-position: 35% 50% !important;
+		text-decoration: none;
+	}
+/* } */
+/*
+** the navigation portlet
+*/
+
+/* @media screen, projection { */
+	#p-navigation {
+		position: relative;
+		z-index: 3;
+	}
+	#p-navigation a {
+		display: block;
+	}
+	#p-navigation li.active a, #p-navigation li.active a:hover {
+		display: inline;
+	}
+/* } */
+
+#p-navigation .pBody {
+	padding-right: 0;
+}
+
+#p-navigation li.active a, #p-navigation li.active a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/*
+** Search portlet
+*/
+/* @media screen, projection { */
+	#p-search {
+		position: relative;
+		z-index: 3;
+	}
+/* } */
+input.searchButton {
+	margin-top: 1px;
+	font-size: 95%;
+}
+#searchGoButton {
+	padding-left: .5em;
+	padding-right: .5em;
+	font-weight: bold;
+}
+#searchInput {
+	width: 10.9em;
+	margin: 0;
+	font-size: 95%;
+}
+#p-search .pBody {
+	padding: .5em .4em .4em .4em;
+	text-align: center;
+}
+
+/*
+** the personal toolbar
+*/
+/* @media screen, projection { */
+	#p-personal {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 0;
+	}
+	#p-personal {
+		width: 100%;
+		white-space: nowrap;
+		padding: 0;
+		margin: 0;
+		border: none;
+		background: none;
+		overflow: visible;
+		line-height: 1.2em;
+	}
+	#p-personal h5 {
+		display: none;
+	}
+	#p-personal .portlet,
+	#p-personal .pBody {
+		z-index: 0;
+		padding: 0;
+		margin: 0;
+		border: none;
+		overflow: visible;
+		background: none;
+	}
+/* this is the ul contained in the portlet */
+	#p-personal ul {
+		border: none;
+		line-height: 1.4em;
+		color: #2f6fab;
+		padding: 0 2em 0 3em;
+		margin: 0;
+		text-align: right;
+		list-style: none;
+		z-index: 0;
+		background: none;
+		cursor: default;
+	}
+	#p-personal li {
+		z-index: 0;
+		border: none;
+		padding: 0;
+		display: inline;
+		color: #2f6fab;
+		margin-left: 1em;
+		line-height: 1.2em;
+		background: none;
+	}
+	#p-personal li a {
+		text-decoration: none;
+		color: #005896;
+		padding-bottom: .2em;
+		background: none;
+	}
+	#p-personal li a:hover {
+		background-color: white;
+		padding-bottom: .2em;
+		text-decoration: none;
+	}
+	#p-personal li.active a:hover {
+		background-color: transparent;
+	}
+	/* the icon in front of the user name, single quotes
+	in bg url to hide it from iemac */
+	li#pt-userpage,
+	li#pt-anonuserpage,
+	li#pt-login {
+		background: url(user.gif) top left no-repeat;
+		padding-left: 20px;
+		text-transform: none;
+	}
+/* } */
+#p-personal ul {
+	text-transform: lowercase;
+}
+#p-personal li.active {
+	font-weight: bold;
+}
+/*
+** the page-related actions- page/talk, edit etc
+*/
+/* @media screen, projection { */
+	#p-cactions {
+		position: absolute;
+		top: 1.1em;
+		left: 11.9em;
+		margin: 0;
+		white-space: nowrap;
+		width: 76%;
+		line-height: 1.1em;
+		overflow: visible;
+		background: none;
+		border-collapse: collapse;
+		padding-left: 1em;
+		list-style: none;
+		font-size: 95%;
+	}
+	#p-cactions ul {
+		list-style: none;
+	}
+	#p-cactions li {
+		display: inline;
+		border: 1px solid #aaa;
+		border-bottom: none;
+		padding: 0 0 .1em 0;
+		margin: 0 .3em 0 0;
+		overflow: visible;
+		background: white;
+	}
+	#p-cactions li.selected {
+		border-color: #fabd23;
+		padding: 0 0 .2em 0;
+		font-weight: bold;
+	}
+	#p-cactions li a {
+		background-color: #fbfbfb;
+		color: #002bb8;
+		border: none;
+		padding: 0 .8em .3em;
+		position: relative;
+		z-index: 0;
+		margin: 0;
+		text-decoration: none;
+	}
+	#p-cactions li.selected a {
+		z-index: 3;
+		padding: 0 1em .2em!important;
+		background-color: white;
+	}
+	#p-cactions .new a {
+		color: #ba0000;
+	}
+	#p-cactions li a:hover {
+		z-index: 3;
+		text-decoration: none;
+		background-color: white;
+	}
+	#p-cactions h5 {
+		display: none;
+	}
+	#p-cactions li.istalk {
+		margin-right: 0;
+	}
+	#p-cactions li.istalk a {
+		padding-right: .5em;
+	}
+	#p-cactions #ca-addsection a {
+		padding-left: .4em;
+		padding-right: .4em;
+	}
+	/* offsets to distinguish the tab groups */
+	li#ca-talk {
+		margin-right: 1.6em;
+	}
+	li#ca-watch, li#ca-unwatch, li#ca-varlang-0, li#ca-print {
+		margin-left: 1.6em;
+	}
+	#p-cactions .pBody {
+		font-size: 1em;
+		background-color: transparent;
+		color: inherit;
+		border-collapse: inherit;
+		border: 0;
+		padding: 0;
+	}
+/* } */
+#p-cactions .hiddenStructure {
+	display: none;
+}
+#p-cactions li a {
+	text-transform: lowercase;
+}
+
+/*
+** the remaining portlets
+*/
+/* @media screen, projection { */
+	#p-tbx,
+	#p-lang {
+		position: relative;
+		z-index: 3;
+	}
+/* } */
+
+/* TODO: #t-iscite is only used by the Cite extension, come up with some
+ * system which allows extensions to add to this file on the fly
+ */
+#t-ispermalink, #t-iscite {
+	color: #999;
+}
+/*
+** footer
+*/
+#footer {
+	background-color: white;
+	border-top: 1px solid #fabd23;
+	border-bottom: 1px solid #fabd23;
+	margin: .6em 0 1em 0;
+	padding: .4em 0 1.2em 0;
+	text-align: center;
+	font-size: 90%;
+}
+#footer li {
+	display: inline;
+	margin: 0 1.3em;
+}
+#f-poweredbyico, #f-copyrightico {
+	margin: 0 8px;
+	position: relative;
+	top: -2px; /* Bump it up just a tad */
+}
+#f-poweredbyico {
+	float: right;
+	height: 1%;
+}
+#f-copyrightico {
+	float: left;
+	height: 1%;
+}
+
+/* js pref toc */
+#preftoc {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	clear: both;
+}
+#preftoc li {
+	background-color: #f0f0f0;
+	color: #000;
+}
+/* @media screen, projection { */
+	#preftoc li {
+		margin: 1px -2px 1px 2px;
+		float: left;
+		padding: 2px 0 3px 0;
+		border: 1px solid #fff;
+		border-right-color: #716f64;
+		border-bottom: 0;
+		position: relative;
+		white-space: nowrap;
+		list-style-type: none;
+		list-style-image: none;
+		z-index: 3;
+	}
+/* } */
+#preftoc li.selected {
+	font-weight: bold;
+	background-color: #f9f9f9;
+	border: 1px solid #aaa;
+	border-bottom: none;
+	cursor: default;
+	top: 1px;
+	padding-top: 2px;
+	margin-right: -3px;
+}
+#preftoc > li.selected {
+	top: 2px;
+}
+#preftoc a,
+#preftoc a:active {
+	display: block;
+	color: #000;
+	padding: 0 .7em;
+	position: relative;
+	text-decoration: none;
+}
+#preftoc li.selected a {
+	cursor: default;
+	text-decoration: none;
+}
+#prefcontrol {
+	padding-top: 2em;
+	clear: both;
+}
+#preferences {
+	margin: 0;
+	border: 1px solid #aaa;
+	clear: both;
+	padding: 1.5em;
+	background-color: #F9F9F9;
+}
+.prefsection {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.prefsection fieldset {
+	border: 1px solid #aaa;
+	float: left;
+	margin-right: 2em;
+}
+.prefsection legend {
+	font-weight: bold;   
+}
+.prefsection table, .prefsection legend {
+	background-color: #F9F9F9;
+}
+/* @media screen, projection { */
+	.mainLegend {
+		display: none;
+	}
+/* } */
+div.prefsectiontip {
+	font-size: 95%;
+	margin-top: 0;
+	background-color: #FFC1C1;
+	padding: .2em .7em;
+	clear: both;
+}
+.btnSavePrefs {
+	font-weight: bold;
+	padding-left: .3em;
+	padding-right: .3em;
+}
+
+.preferences-login {
+	clear: both;
+	margin-bottom: 1.5em;
+}
+
+.prefcache {
+	font-size: 90%;
+	margin-top: 2em;
+}
+
+div#userloginForm form,
+div#userlogin form#userlogin2 {
+	margin: 0 3em 1em 0;
+	border: 1px solid #aaa;
+	clear: both;
+	padding: 1.5em 2em;
+	background-color: #f9f9f9;
+	float: left;
+}
+
+div#userloginForm table,
+div#userlogin form#userlogin2 table {
+	background-color: #f9f9f9;
+}
+
+div#userloginForm h2,
+div#userlogin form#userlogin2 h2 {
+	padding-top: 0;
+}
+
+div#userlogin .captcha {
+	border: 1px solid #bbb;
+	padding: 1.5em 2em;
+	width: 400px;
+	background-color: white;
+}
+
+
+#userloginprompt, #languagelinks {
+	font-size: 85%;
+}
+
+#login-sectiontip {
+	font-size: 85%;
+	line-height: 1.2;
+	padding-top: 2em;
+}
+
+#userlogin .loginText, #userlogin .loginPassword {
+	width: 12em;
+}
+
+#userloginlink a, #wpLoginattempt, #wpCreateaccount {
+	font-weight: bold;
+}
+
+/* @media screen, projection { */
+	/*
+	** IE/Mac fixes, hope to find a validating way to move this
+	** to a separate stylesheet. This would work but doesn't validate:
+	** @import("IEMacFixes.css");
+	*/
+	/* tabs: border on the a, not the div */
+	* > html #p-cactions li { border: none; }
+	* > html #p-cactions li a {
+		border: 1px solid #aaa;
+		border-bottom: none;
+	}
+	* > html #p-cactions li.selected a { border-color: #fabd23; }
+	/* footer icons need a fixed width */
+	* > html #f-poweredbyico,
+	* > html #f-copyrightico { width: 88px; }
+	* > html #bodyContent,
+	* > html #bodyContent pre {
+		overflow-x: auto;
+		width: 100%;
+		padding-bottom: 25px;
+	}
+/* } */
+
+/* more IE fixes */
+/* float/negative margin brokenness */
+* html #footer {margin-top: 0;}
+* html #column-content {
+	display: inline;
+	margin-bottom: 0;
+}
+* html div.editsection { font-size: smaller; }
+#pagehistory li.selected { position: relative; }
+
+/* Mac IE 5.0 fix; floated content turns invisible */
+* > html #column-content {
+	float: none;
+}
+* > html #column-one {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+* > html #footer {
+	margin-left: 13.2em;
+}
+.redirectText {
+	font-size: 150%;
+	margin: 5px;
+}
+
+.printfooter {
+	display: none;
+}
+
+.not-patrolled {
+	background-color: #ffa;
+}
+div.patrollink {
+	font-size: 75%;
+	text-align: right;
+}
+span.newpage, span.minor, span.searchmatch, span.bot {
+	font-weight: bold;
+}
+span.unpatrolled {
+	font-weight: bold;
+	color: red;
+}
+
+span.searchmatch {
+	color: red;
+}
+.sharedUploadNotice {
+	font-style: italic;
+}
+
+span.updatedmarker {
+	color: black;
+	background-color: #0f0;
+}
+
+table.gallery {
+	border: 1px solid #ccc;
+	margin: 2px;
+	padding: 2px;
+	background-color: white;
+}
+
+table.gallery tr {
+	vertical-align: top;
+}
+
+table.gallery td {
+	vertical-align: top;
+	background-color: #f9f9f9;
+	border: solid 2px white;
+}
+/* Keep this temporarily so that cached pages will display right */
+table.gallery td.galleryheader {
+    text-align: center;
+	font-weight: bold;
+}
+table.gallery caption {
+	font-weight: bold;
+}
+
+div.gallerybox {
+	margin: 2px;
+}
+
+div.gallerybox div.thumb {
+	text-align: center;
+	border: 1px solid #ccc;
+	margin: 2px;
+}
+
+div.gallerytext {
+	font-size: 94%;
+	padding: 2px 4px;
+}
+
+span.comment {
+	font-style: italic;
+}
+
+span.changedby {
+	font-size: 95%;
+}
+
+.previewnote {
+	text-indent: 3em;
+	color: #c00;
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+.previewnote p {
+	margin: 0;
+	padding: 0;
+}
+
+.editExternally {
+	border: 1px solid gray;
+	background-color: #ffffff;
+	padding: 3px;
+	margin-top: 0.5em;
+	float: left;
+	font-size: small;
+	text-align: center;
+}
+.editExternallyHelp {
+	font-style: italic;
+	color: gray;
+}
+
+li span.deleted, span.history-deleted {
+	text-decoration: line-through;
+	color: #888;
+	font-style: italic;
+}
+
+.toggle {
+	margin-left: 2em;
+	text-indent: -2em;
+}
+
+/* Classes for EXIF data display */
+table.mw_metadata {
+	font-size: 0.8em;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+	width: 300px;
+}
+
+table.mw_metadata caption {
+	font-weight: bold;
+}
+
+table.mw_metadata th {
+	font-weight: normal;
+}
+
+table.mw_metadata td {
+	padding: 0.1em;
+}
+
+table.mw_metadata {
+	border: none;
+	border-collapse: collapse;
+}
+
+table.mw_metadata td, table.mw_metadata th {
+	text-align: center;
+	border: 1px solid #aaaaaa;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+}
+
+table.mw_metadata th {
+	background-color: #f9f9f9;
+}
+
+table.mw_metadata td {
+	background-color: #fcfcfc;
+}
+
+table.collapsed tr.collapsable {
+	display: none;
+}
+
+
+/* filetoc */
+ul#filetoc {
+	text-align: center;
+	border: 1px solid #aaaaaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+	margin-bottom: 0.5em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#filetoc li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 2em;
+}
+
+input#wpSummary {
+	width: 80%;
+}
+
+/* @bug 1714 */
+input#wpSave, input#wpDiff {
+	margin-right: 0.33em;
+}
+
+#editform .editOptions {
+	display: inline;
+}
+
+#wpSave {
+	font-weight: bold;
+}
+
+/* Classes for article validation */
+
+table.revisionform_default {
+	border: 1px solid #000000;
+}
+
+table.revisionform_focus {
+	border: 1px solid #000000;
+	background-color:#00BBFF;
+}
+
+tr.revision_tr_default {
+	background-color:#EEEEEE;
+}
+
+tr.revision_tr_first {
+	background-color:#DDDDDD;
+}
+
+p.revision_saved {
+	color: green;
+	font-weight:bold;
+}
+
+#mw_trackbacks {
+	border: solid 1px #bbbbff;
+	background-color: #eeeeff;
+	padding: 0.2em;
+}
+
+
+/* Allmessages table */
+
+#allmessagestable th {
+	background-color: #b2b2ff;
+}
+
+#allmessagestable tr.orig {
+	background-color: #ffe2e2;
+}
+
+#allmessagestable tr.new {
+	background-color: #e2ffe2;
+}
+
+#allmessagestable tr.def {
+	background-color: #f0f0ff;
+}
+
+
+/* noarticletext */
+div.noarticletext {
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: .2em 1em;
+	color: #000;
+}
+
+div#searchTargetContainer {
+	left:       10px;
+	top:        10px;
+	width:      90%;
+	background: white;
+}
+
+div#searchTarget {
+	padding:    3px;
+	margin:     5px;
+	background: #F0F0F0;
+	border:     solid 1px blue;
+}
+
+div#searchTarget ul li {
+	list-style: none;
+}
+
+div#searchTarget ul li:before {
+	color: orange;
+	content: "\00BB \0020";
+}
+
+div.multipageimagenavbox {
+   border: solid 1px silver;
+   padding: 4px;
+   margin: 1em;
+   -moz-border-radius: 6px;
+   background: #f0f0f0;
+}
+
+div.multipageimagenavbox div.thumb {
+   border: none;
+   margin-left: 2em;
+   margin-right: 2em;
+}
+
+div.multipageimagenavbox hr {
+   margin: 6px;
+}
+
+table.multipageimage td {
+   text-align: center;
+}
+
+/** Special:Version */
+
+table#sv-ext, table#sv-hooks {
+	margin: 1em;
+	padding:0em;
+}
+
+#sv-ext td, #sv-hooks td,
+#sv-ext th, #sv-hooks th {
+	border: 1px solid #A0A0A0;
+	padding: 0 0.15em 0 0.15em;
+}
+#sv-ext th, #sv-hooks th {
+	background-color: #F0F0F0;
+	color: black;
+	padding: 0 0.15em 0 0.15em;
+}
+tr.sv-space{
+	height: 0.8em;
+	border:none;
+}
+tr.sv-space td { display: none; }
+
+/*
+  Table pager (e.g. Special:Imagelist)
+  - remove underlines from the navigation link
+  - collapse borders
+  - set the borders to outsets (similar to Special:Allmessages)
+  - remove line wrapping for all td and th, set background color
+  - restore line wrapping for the last two table cells (description and size)
+*/
+.TablePager_nav a { text-decoration: none; }
+.TablePager { border-collapse: collapse; }
+.TablePager, .TablePager td, .TablePager th { 
+	border: 1px solid #aaaaaa;
+	padding: 0 0.15em 0 0.15em;
+}
+.TablePager th { background-color: #eeeeff }
+.TablePager td { background-color: #ffffff }
+.TablePager tr:hover td { background-color: #eeeeff }
+
+.imagelist td, .imagelist th { white-space: nowrap }
+.imagelist .TablePager_col_links { background-color: #eeeeff }
+.imagelist .TablePager_col_img_description { white-space: normal }
+.imagelist th.TablePager_sort { background-color: #ccccff }
+
+.templatesUsed { margin-top: 1.5em; }
+
+.mw-summary-preview {
+	margin: 0.1em 0;
+}
+
+/* Convenience links on Special:Ipblocklist */
+p.mw-ipb-conveniencelinks {
+	font-size: 90%;
+	float: right;
+}
+
+/**
+ * Here is some stuff that's ACTUALLY COMMON TO ALL SKINS.
+ * When the day comes, it can be moved to a *real* common.css.
+ */
+.mw-plusminus-null { color: #aaa; }
+.texvc { direction: ltr; unicode-bidi: embed; }
+/* Stop floats from intruding into edit area in previews */
+#toolbar, #wpTextbox1 { clear: both; }
+
+.MediaTransformError {
+	background-color: #ccc;
+	padding: 0.1em;
+}
+.MediaTransformError td {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 90%;
+}
+_Ahttp://entropie.digital.udk-berlin.de/skins/udkstyle/main.css?207Xtext/cssO^bplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345MNOPQRSTUVWXYZ[\M]^bcU$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_Ahttp://entropie.digital.udk-berlin.de/skins/udkstyle/main.css?207“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uuƒ˛ 6»”6789CWNS.keysZNS.objectsÄ©:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄ©DEFGHIJKLÄÄÄÄÄÄÄÄÄZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=100Ubytes_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-PatchXtext/css_Sat, 07 May 2011 12:42:43 GMTU29181_"483ceb-71fd-43ae62ba58700"_Mon, 24 Sep 2007 18:55:56 GMT“./_`£`a2_NSMutableDictionary\NSDictionaryq˝“./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d Ö ã ¶ ≠ ∞ ≥ ∑ ª æ ¡ ƒ «   Õ – ” ’ ◊ Ÿ € › ﬂ · „ Â Á È Î Ú ˙
+PU^ilr{ÑÜçï†¢¨Æ∞≤¥∂∏∫ºæ» ÃŒ–“‘÷ÿ⁄ÂÛ˙ +9NT©≤“ÿˆ5BEJNb             g              p‘O2GIF89a  Ä  cåúˇˇˇ!˘   ,       	åè©ª‡£Ñ© ;_?http://entropie.digital.udk-berlin.de/skins/udkstyle/bullet.gifYimage/gifOVbplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345MNOPQRSTUVWXYZ[\M]^bcU$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_?http://entropie.digital.udk-berlin.de/skins/udkstyle/bullet.gif“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uu≈U˘≠»”6789CWNS.keysZNS.objectsÄ©:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄ©DEFGHIJKLÄÄÄÄÄÄÄÄÄZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=99Ubytes_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-PatchYimage/gif_Sat, 07 May 2011 12:42:44 GMTR50_"483cda-32-43ae30775f200"_Mon, 24 Sep 2007 15:11:04 GMT“./_`£`a2_NSMutableDictionary\NSDictionary2“./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d Ö ã ¶ ≠ ∞ ≥ ∑ ª æ ¡ ƒ «   Õ – ” ’ ◊ Ÿ € › ﬂ · „ Â Á È Î Ú ˙
+NS\gjpyÇÑãìû†™¨Æ∞≤¥∂∏∫º∆» ÃŒ–“‘÷ÿ„Ò¯
+)7KQ¶∞–”Ô.;=BFZ             g              h‘O•âPNG
+
+   IHDR   
+   
+   ∫Ï?è   PLTEfôÃ3ôÃôÃˇ fÃ fˇˇˇˇˇˇˇDÍï   tRNSˇˇˇˇˇˇ KF   8IDATW%ÀA @A"ÎˇOﬁ¡T$öº x¥lÁ≤»:rÙîÀ£°BÆŒû˘„!/¯YÏõõƒ5f    IENDÆB`Ç_Ahttp://entropie.digital.udk-berlin.de/skins/udkstyle/external.pngYimage/pngOYbplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345MNOPQRSTUVWXYZ[\M]^bcU$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_Ahttp://entropie.digital.udk-berlin.de/skins/udkstyle/external.png“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uuÀè2»”6789CWNS.keysZNS.objectsÄ©:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄ©DEFGHIJKLÄÄÄÄÄÄÄÄÄZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=93Ubytes_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-PatchYimage/png_Sat, 07 May 2011 12:42:49 GMTS165_"483cdd-a5-43ae30775f200"_Mon, 24 Sep 2007 15:11:04 GMT“./_`£`a2_NSMutableDictionary\NSDictionary•“./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d Ö ã ¶ ≠ ∞ ≥ ∑ ª æ ¡ ƒ «   Õ – ” ’ ◊ Ÿ € › ﬂ · „ Â Á È Î Ú ˙
+PU^ilr{ÑÜçï†¢¨Æ∞≤¥∂∏∫ºæ» ÃŒ–“‘÷ÿ⁄ÂÛ˙ +9MS®≤“÷Ú1>@EI]             g              k‘OâPNG
+
+   IHDR      
+   æÔ≤   gAMA  Ø»7äÈ   tEXtSoftware Adobe ImageReadyq…e<   $PLTE3Ö÷-Å÷Êˇw“≤Â·Ìˇ•…ˇÃ‡ˇf£ˇˇˇˇ fÃˇˇˇ;∆›(   tRNSˇˇˇˇˇˇˇˇˇˇˇ ﬂŒŒ   XIDATx⁄b‡fnnÄ b‡‚‰‰‰b`· .Vvv.&FÄ b‡b„‡ …XÑùùï Ä¿"l\  ∏@ ÅµÉL  .( 0 lùÅ¡r|Ú    IENDÆB`Ç_Ahttp://entropie.digital.udk-berlin.de/skins/udkstyle/document.pngO\bplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345MNOPQRSTUVWXYZ[\M]^bcU$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_Ahttp://entropie.digital.udk-berlin.de/skins/udkstyle/document.png“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uvæ–»”6789CWNS.keysZNS.objectsÄ©:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄ©DEFGHIJKLÄÄÄÄÄÄÄÄÄZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=100Ubytes_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-PatchYimage/png_Sat, 07 May 2011 12:43:56 GMTS270_"483cdc-10e-43ae30775f200"_Mon, 24 Sep 2007 15:11:04 GMT“./_`£`a2_NSMutableDictionary\NSDictionary“./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d Ö ã ¶ ≠ ∞ ≥ ∑ ª æ ¡ ƒ «   Õ – ” ’ ◊ Ÿ € › ﬂ · „ Â Á È Î Ú ˙
+PU^ilr{ÑÜçï†¢¨Æ∞≤¥∂∏∫ºæ» ÃŒ–“‘÷ÿ⁄ÂÛ˙ +9NT©≥”◊Ù3@CHL`             g              n‘O§GIF89a  ˜  [I2ZI4\H1NNNmóvàTìd+ëf0ñg=ªz4Üs\át^ïpAîsGö{Tç~m¶wMŸ~*›,É∂%áπ+äº3àùaíÅlíø@∫ùuó√Gö≈Mü«VßÃe©Õi¬ïZ‚ïCÁ£VÁ•VÌµlø{üóå£££∫◊ÜΩ⁄àœµêÿ∏â«ﬂõ ‚£Õ„®—ÊÆ’Ë¥„ƒóÒ√ÉÚ é˜⁄´˘‡∫›Ÿ‘€Î¡ﬂÌ«˚Íœ···ÍÍÍˇˇˇ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            !˘  ; ,       Å wH∞†¡\®aê`¿∞·éR¿¯` Ä≈2–ò#AÄè%T» "¬Äè:Là !Aéè;t@ÿy”bL#pê0†'¡ò/X aACÖ¢M‹p±‚Ñ(LxI–ÑçPtÿ‡Å¿÷ÇD”™%ä≥≠€∑ ;_=http://entropie.digital.udk-berlin.de/skins/udkstyle/user.gifOWbplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345MNOPQRSTUVWXYZ[\M]^bcU$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_=http://entropie.digital.udk-berlin.de/skins/udkstyle/user.gif“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uu≈Y•Ï»”6789CWNS.keysZNS.objectsÄ©:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄ©DEFGHIJKLÄÄÄÄÄÄÄÄÄZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=98Ubytes_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-PatchYimage/gif_Sat, 07 May 2011 12:42:44 GMTS932_"483cf1-3a4-43ae30775f200"_Mon, 24 Sep 2007 15:11:04 GMT“./_`£`a2_NSMutableDictionary\NSDictionary§“./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d Ö ã ¶ ≠ ∞ ≥ ∑ ª æ ¡ ƒ «   Õ – ” ’ ◊ Ÿ € › ﬂ · „ Â Á È Î Ú ˙
+LQZehnwÄÇâëúû®™¨Æ∞≤¥∂∏∫ƒ∆» ÃŒ–“‘÷·Ôˆ'5IO§ÆŒ“Ô.;>CG[             g              i‘ !"OÙ/*
+** MediaWiki Print style sheet for CSS2-capable browsers.
+** Copyright Gabriel Wicke, http://www.aulinx.de/
+**
+** Derived from the plone (http://plone.org/) styles
+** Copyright Alexander Limi
+*/
+
+/* Thanks to A List Apart (http://alistapart.com/) for useful extras */
+a.stub,
+a.new{ color:#ba0000; text-decoration:none; }
+
+#toc { 
+    /*border:1px solid #2f6fab;*/
+    border:1px solid #aaaaaa;
+    background-color:#f9f9f9;
+    padding:5px;
+}
+.tocindent {
+	margin-left: 2em;
+}
+.tocline {
+	margin-bottom: 0px;
+}
+
+/* images */
+div.floatright { 
+    float: right;
+    clear: right;
+    margin: 0;
+    position:relative;
+    border: 0.5em solid White;
+    border-width: 0.5em 0 0.8em 1.4em;
+}
+div.floatright p { font-style: italic;} 
+div.floatleft { 
+    float: left; 
+    margin: 0.3em 0.5em 0.5em 0;
+    position:relative;
+    border: 0.5em solid White;
+    border-width: 0.5em 1.4em 0.8em 0;
+}
+div.floatleft p { font-style: italic; } 
+/* thumbnails */
+div.thumb {
+    margin-bottom: 0.5em;
+    border-style: solid; border-color: White;
+    width: auto;
+    overflow: hidden;
+}
+div.thumb div {
+    border:1px solid #cccccc;
+    padding: 3px !important;
+    background-color:#f9f9f9;
+    font-size: 94%;
+    text-align: center;
+}
+div.thumb div a img {
+    border:1px solid #cccccc;
+}
+div.thumb div div.thumbcaption {
+    border: none;
+    padding: 0.3em 0 0.1em 0;
+}
+div.magnify { display: none; }
+div.tright {
+    float: right;
+    clear: right;
+    border-width: 0.5em 0 0.8em 1.4em;
+}
+div.tleft {
+    float: left;
+    margin-right:0.5em;
+    border-width: 0.5em 1.4em 0.8em 0;
+}
+img.thumbborder {
+	border: 1px solid #dddddd;
+}
+
+/* table standards */
+table.rimage {
+    float:right; 
+    width:1pt; 
+    position:relative;
+    margin-left:1em; 
+    margin-bottom:1em;
+    text-align:center;
+}
+
+body {
+    background: White;
+    /*font-size: 11pt !important;*/
+    color: Black;
+    margin: 0;
+    padding: 0;
+}
+
+.noprint,
+div#jump-to-nav,
+div.top,
+div#column-one,
+#colophon,
+.editsection,
+.toctoggle,
+.tochidden,
+div#f-poweredbyico,
+div#f-copyrightico,
+li#viewcount,
+li#about,
+li#disclaimer,
+li#privacy {
+    /* Hides all the elements irrelevant for printing */
+    display: none;
+}
+
+ul { 
+    list-style-type: square;
+}
+
+#content {
+    background: none;
+    border: none ! important;
+    padding: 0 ! important;
+    margin: 0 ! important;
+}
+#footer {
+	background : white;
+	color : black;
+    border-top: 1px solid black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+p, .documentDescription {
+    margin: 1em 0 ! important;
+    line-height: 1.2em;
+}
+
+.tocindent p {
+	margin: 0 0 0 0 ! important;
+}
+
+pre {
+    border: 1pt dashed black;
+    white-space: pre;
+    font-size: 8pt;
+    overflow: auto;
+    padding: 1em 0;
+	background : white;
+	color : black;
+}
+
+table.listing,
+table.listing td {
+    border: 1pt solid black;
+    border-collapse: collapse;
+}
+
+a {
+    color: Black !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+a:link, a:visited {
+    color: #520;
+    background: transparent;
+    text-decoration: underline;
+}
+
+#content a.external.text:after, #content a.external.autonumber:after {
+    /* Expand URLs for printing */
+    content: " (" attr(href) ") ";
+}
+
+#globalWrapper {
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+#content {
+	background : white;
+	color : black;
+}
+
+#column-content {
+    margin: 0 !important;
+}
+
+#column-content #content {
+    padding: 1em;
+    margin: 0 !important;
+}
+/* MSIE/Win doesn't understand 'inherit' */
+a, a.external, a.new, a.stub {
+	color: black ! important;
+	text-decoration: none ! important;
+}
+
+/* Continue ... */
+a, a.external, a.new, a.stub {
+	color: inherit ! important;
+	text-decoration: inherit ! important;
+}
+
+img { border: none; }
+img.tex { vertical-align: middle; }
+span.texhtml { font-family: serif; }
+
+#siteNotice { display: none; }
+
+table.gallery {
+        border:  1px solid #cccccc;
+        margin:  2px;
+        padding: 2px;
+        background-color:#ffffff;
+}
+
+table.gallery tr { 
+        vertical-align:top;
+}
+
+div.gallerybox {
+        border: 1px solid #cccccc;
+        margin: 2px;
+        background-color:#f9f9f9;
+        width:  150px;
+}
+
+div.gallerybox div.thumb {
+        text-align: center;
+        border: 1px solid #cccccc;
+        margin: 2px;
+}       
+
+div.gallerytext {
+        font-size: 94%;
+        padding: 2px 4px;
+}       
+
+/*
+** Diff rendering
+*/
+table.diff { background:white; }
+td.diff-otitle { background:#ffffff; }
+td.diff-ntitle { background:#ffffff; }
+td.diff-addedline {
+    background:#ccffcc;
+    font-size: smaller;
+    border: solid 2px black;
+}
+td.diff-deletedline {
+    background:#ffffaa;
+    font-size: smaller;
+    border: dotted 2px black;
+}
+td.diff-context {
+    background:#eeeeee;
+    font-size: smaller;
+}
+.diffchange {
+    color: silver;
+    font-weight: bold;
+    text-decoration: underline;
+}
+_Fhttp://entropie.digital.udk-berlin.de/skins/common/commonPrint.css?207Obbplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345MNOPQRSTUVWXYZ[\M]^bcU$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_Fhttp://entropie.digital.udk-berlin.de/skins/common/commonPrint.css?207“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uu≈ Ti»”6789CWNS.keysZNS.objectsÄ©:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄ©DEFGHIJKLÄÄÄÄÄÄÄÄÄZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=100Ubytes_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-PatchXtext/css_Sat, 07 May 2011 12:42:43 GMTT4852_"3ee89a-12f4-4880fd149bc00"_Wed, 02 Jun 2010 17:57:04 GMT“./_`£`a2_NSMutableDictionary\NSDictionaryÙ“./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d Ö ã ¶ ≠ ∞ ≥ ∑ ª æ ¡ ƒ «   Õ – ” ’ ◊ Ÿ € › ﬂ · „ Â Á È Î Ú ˙
+UZcnqwÄâãíö•ß±≥µ∑πªΩø¡√Õœ—”’◊Ÿ€›ﬂÍ¯ˇ %0>SYÆ∑◊‹˙#9FINRf             g              t‘$%&O[√/*
+** MediaWiki 'monobook' style sheet for CSS2-capable browsers.
+** Copyright Gabriel Wicke - http://wikidev.net/
+** License: GPL (http://www.gnu.org/copyleft/gpl.html)
+**
+** Loosely based on http://www.positioniseverything.net/ordered-floats.html by Big John
+** and the Plone 2.0 styles, see http://plone.org/ (Alexander Limi,Joe Geldart & Tom Croucher,
+** Michael Zeltner and Geir B√¶kholt)
+** All you guys rock :)
+*/
+
+/**
+ * Stylesheet for handhelds.  All rules not marked media-specific are shared
+ * with main.css and should be updated in tandem.  The rules can't be in the
+ * same file because old browsers like IE5 won't obey @media rules.
+ *
+ * Rules that are handheld-specific are given @media rules in case old browsers
+ * don't recognize the media attribute and load this file anyway.
+ */
+
+#content {
+	background: white;
+	color: black;
+	border: 1px solid #aaa;
+	border-right: none;
+	line-height: 1.5em;
+}
+/* the left column width is specified in class .portlet */
+
+/* Font size:
+** We take advantage of keyword scaling- browsers won't go below 9px
+** More at http://www.w3.org/2003/07/30-font-size
+** http://style.cleverchimp.com/font_size_intervals/altintervals.html
+*/
+
+body {
+	font: x-small sans-serif;
+	background: #f9f9f9 url(headbg.jpg) 0 0 no-repeat;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+/* scale back up to a sane default */
+#globalWrapper {
+	font-size: 127%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.visualClear {
+	clear: both;
+}
+
+/* general styles */
+
+table {
+	font-size: 100%;
+	color: black;
+	/* we don't want the bottom borders of <h2>s to be visible through
+	   floated tables */
+	background-color: white;
+}
+a {
+	text-decoration: none;
+	color: #002bb8;
+	background: none;
+}
+a:visited {
+	color: #5a3696;
+}
+a:active {
+	color: #faa700;
+}
+a:hover {
+	text-decoration: underline;
+}
+a.stub {
+	color: #772233;
+}
+a.new, #p-personal a.new {
+	color: #ba0000;
+}
+a.new:visited, #p-personal a.new:visited {
+	color: #a55858;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+p img {
+	margin: 0;
+}
+
+hr {
+	height: 1px;
+	color: #aaa;
+	background-color: #aaa;
+	border: 0;
+	margin: .2em 0 .2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: black;
+	background: none;
+	font-weight: normal;
+	margin: 0;
+	padding-top: .5em;
+	padding-bottom: .17em;
+	border-bottom: 1px solid #aaa;
+}
+h1 { font-size: 188%; }
+h1 .editsection { font-size: 53%; }
+h2 { font-size: 150%; }
+h2 .editsection { font-size: 67%; }
+h3, h4, h5, h6 {
+	border-bottom: none;
+	font-weight: bold;
+}
+h3 { font-size: 132%; }
+h3 .editsection { font-size: 76%; font-weight: normal; }
+h4 { font-size: 116%; }
+h4 .editsection { font-size: 86%; font-weight: normal; }
+h5 { font-size: 100%; }
+h5 .editsection { font-weight: normal; }
+h6 { font-size: 80%;  }
+h6 .editsection { font-size: 125%; font-weight: normal; }
+
+.editsection {
+	float: right;
+	margin-left: 5px;
+}
+
+ul {
+	line-height: 1.5em;
+	list-style-type: square;
+	margin: .3em 0 0 1.5em;
+	padding: 0;
+	list-style-image: url(bullet.gif);
+}
+ol {
+	line-height: 1.5em;
+	margin: .3em 0 0 3.2em;
+	padding: 0;
+	list-style-image: none;
+}
+li {
+	margin-bottom: .1em;
+}
+dt {
+	font-weight: bold;
+	margin-bottom: .1em;
+}
+dl {
+	margin-top: .2em;
+	margin-bottom: .5em;
+}
+dd {
+	line-height: 1.5em;
+	margin-left: 2em;
+	margin-bottom: .1em;
+}
+
+fieldset {
+	border: 1px solid #2f6fab;
+	margin: 1em 0 1em 0;
+	padding: 0 1em 1em;
+	line-height: 1.5em;
+}
+legend {
+	padding: .5em;
+	font-size: 95%;
+}
+form {
+	border: none;
+	margin: 0;
+}
+
+textarea {
+	width: 100%;
+	padding: .1em;
+}
+
+input.historysubmit {
+	padding: 0 .3em .3em .3em !important;
+	font-size: 94%;
+	cursor: pointer;
+	height: 1.7em !important;
+	margin-left: 1.6em;
+}
+select {
+	vertical-align: top;
+}
+abbr, acronym, .explain {
+	border-bottom: 1px dotted black;
+	color: black;
+	background: none;
+	cursor: help;
+}
+q {
+	font-family: Times, "Times New Roman", serif;
+	font-style: italic;
+}
+/* disabled for now
+blockquote {
+	font-family: Times, "Times New Roman", serif;
+	font-style: italic;
+}*/
+code {
+	background-color: #f9f9f9;
+}
+pre {
+	padding: 1em;
+	border: 1px dashed #2f6fab;
+	color: black;
+	background-color: #f9f9f9;
+	line-height: 1.1em;
+}
+
+/*
+** the main content area
+*/
+
+#contentSub, #contentSub2 {
+	font-size: 84%;
+	line-height: 1.2em;
+	margin: 0 0 1.4em 1em;
+	color: #7d7d7d;
+	width: auto;
+}
+span.subpages {
+	display: block;
+}
+
+/* Some space under the headers in the content area */
+#bodyContent h1, #bodyContent h2 {
+	margin-bottom: .6em;
+}
+#bodyContent h3, #bodyContent h4, #bodyContent h5 {
+	margin-bottom: .3em;
+}
+.firstHeading {
+	margin-bottom: .1em;
+}
+
+/* user notification thing */
+.usermessage {
+	background-color: #ffce7b;
+	border: 1px solid #ffa500;
+	color: black;
+	font-weight: bold;
+	margin: 2em 0 1em;
+	padding: .5em 1em;
+	vertical-align: middle;
+}
+#siteNotice {
+	text-align: center;
+	font-size: 95%;
+	padding: 0 .9em;
+}
+#siteNotice p {
+	margin: 0;
+	padding: 0;
+}
+.error {
+	color: red;
+	font-size: larger;
+}
+.errorbox, .successbox {
+	font-size: larger;
+	border: 2px solid;
+	padding: .5em 1em;
+	float: left;
+	margin-bottom: 2em;
+	color: #000;
+}
+.errorbox {
+	border-color: red;
+	background-color: #fff2f2;
+}
+.successbox {
+	border-color: green;
+	background-color: #dfd;
+}
+.errorbox h2, .successbox h2 {
+	font-size: 1em;
+	font-weight: bold;
+	display: inline;
+	margin: 0 .5em 0 0;
+	border: none;
+}
+
+#catlinks {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	margin-top: 1em;
+	clear: both;
+}
+/* currently unused, intended to be used by a metadata box
+in the bottom-right corner of the content area */
+.documentDescription {
+	/* The summary text describing the document */
+	font-weight: bold;
+	display: block;
+	margin: 1em 0;
+	line-height: 1.5em;
+}
+.documentByLine {
+	text-align: right;
+	font-size: 90%;
+	clear: both;
+	font-weight: normal;
+	color: #76797c;
+}
+
+/* emulate center */
+.center {
+	width: 100%;
+	text-align: center;
+}
+*.center * {
+	margin-left: auto;
+	margin-right: auto;
+}
+/* small for tables and similar */
+.small, .small * {
+	font-size: 94%;
+}
+table.small {
+	font-size: 100%;
+}
+
+/*
+** content styles
+*/
+
+#toc,
+.toc,
+.mw-warning {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+#toc h2,
+.toc h2 {
+	display: inline;
+	border: none;
+	padding: 0;
+	font-size: 100%;
+	font-weight: bold;
+}
+#toc #toctitle,
+.toc #toctitle,
+#toc .toctitle,
+.toc .toctitle {
+	text-align: center;
+}
+#toc ul,
+.toc ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin-left: 0;
+	padding-left: 0;
+	text-align: left;
+}
+#toc ul ul,
+.toc ul ul {
+	margin: 0 0 0 2em;
+}
+#toc .toctoggle,
+.toc .toctoggle {
+	font-size: 94%;
+}
+
+.mw-warning {
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+
+/* images */
+div.floatright, table.floatright {
+	clear: right;
+	float: right;
+	position: relative;
+	margin: 0 0 .5em .5em;
+	border: 0;
+/*
+	border: .5em solid white;
+	border-width: .5em 0 .8em 1.4em;
+*/
+}
+div.floatright p { font-style: italic; }
+div.floatleft, table.floatleft {
+	float: left;
+	clear: left;
+	position: relative;
+	margin: 0 .5em .5em 0;
+	border: 0;
+/*
+	margin: .3em .5em .5em 0;
+	border: .5em solid white;
+	border-width: .5em 1.4em .8em 0;
+*/
+}
+div.floatleft p { font-style: italic; }
+/* thumbnails */
+div.thumb {
+	margin-bottom: .5em;
+	border-style: solid;
+	border-color: white;
+	width: auto;
+}
+div.thumbinner {
+	border: 1px solid #ccc;
+	padding: 3px !important;
+	background-color: #f9f9f9;
+	font-size: 94%;
+	text-align: center;
+	overflow: hidden;
+}
+html .thumbimage {
+	border: 1px solid #ccc;
+}
+html .thumbcaption {
+	border: none;
+	text-align: left;
+	line-height: 1.4em;
+	padding: 3px !important;
+	font-size: 94%;
+}
+div.magnify {
+	float: right;
+	border: none !important;
+	background: none !important;
+}
+div.magnify a, div.magnify img {
+	display: block;
+	border: none !important;
+	background: none !important;
+}
+div.tright {
+	clear: right;
+	float: right;
+	border-width: .5em 0 .8em 1.4em;
+}
+div.tleft {
+	float: left;
+	clear: left;
+	margin-right: .5em;
+	border-width: .5em 1.4em .8em 0;
+}
+
+.hiddenStructure {
+	display: none;
+	speak: none;
+}
+img.tex {
+	vertical-align: middle;
+}
+span.texhtml {
+	font-family: serif;
+}
+
+/*
+** classes for special content elements like town boxes
+** intended to be referenced directly from the wiki src
+*/
+
+/*
+** User styles
+*/
+/* table standards */
+table.rimage {
+	float: right;
+	position: relative;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.toccolours {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+div.townBox {
+	position: relative;
+	float: right;
+	background: white;
+	margin-left: 1em;
+	border: 1px solid gray;
+	padding: .3em;
+	width: 200px;
+	overflow: hidden;
+	clear: right;
+}
+div.townBox dl {
+	padding: 0;
+	margin: 0 0 .3em;
+	font-size: 96%;
+}
+div.townBox dl dt {
+	background: none;
+	margin: .4em 0 0;
+}
+div.townBox dl dd {
+	margin: .1em 0 0 1.1em;
+	background-color: #f3f3f3;
+}
+
+/*
+** edit views etc
+*/
+.special li {
+	line-height: 1.4em;
+	margin: 0;
+	padding: 0;
+}
+
+/* Page history styling */
+/* the auto-generated edit comments */
+.autocomment {
+	color: gray;
+}
+#pagehistory span.user {
+	margin-left: 1.4em;
+	margin-right: .4em;
+}
+#pagehistory span.minor {
+	font-weight: bold;
+}
+#pagehistory li {
+	border: 1px solid white;
+}
+#pagehistory li.selected {
+	background-color: #f9f9f9;
+	border: 1px dashed #aaa;
+}
+
+/*
+** Diff rendering
+*/
+table.diff, td.diff-otitle, td.diff-ntitle {
+	background-color: white;
+}
+td.diff-addedline {
+	background: #cfc;
+	font-size: smaller;
+}
+td.diff-deletedline {
+	background: #ffa;
+	font-size: smaller;
+}
+td.diff-context {
+	background: #eee;
+	font-size: smaller;
+}
+.diffchange {
+	color: red;
+	font-weight: bold;
+}
+
+/*
+** keep the whitespace in front of the ^=, hides rule from konqueror
+** this is css3, the validator doesn't like it when validating as css2
+*/
+#bodyContent a.external,
+#bodyContent a[href ^="gopher://"] {
+	background: url(external.png) center right no-repeat;
+	padding-right: 13px;
+}
+#bodyContent a[href ^="https://"],
+.link-https {
+	background: url(lock_icon.gif) center right no-repeat;
+	padding-right: 16px;
+}
+#bodyContent a[href ^="mailto:"],
+.link-mailto {
+	background: url(mail_icon.gif) center right no-repeat;
+	padding-right: 18px;
+}
+#bodyContent a[href ^="news://"] {
+	background: url(news_icon.png) center right no-repeat;
+	padding-right: 18px;
+}
+#bodyContent a[href ^="ftp://"],
+.link-ftp {
+	background: url(file_icon.gif) center right no-repeat;
+	padding-right: 18px;
+}
+#bodyContent a[href ^="irc://"],
+.link-irc {
+	background: url(discussionitem_icon.gif) center right no-repeat;
+	padding-right: 18px;
+}
+#bodyContent a.external[href $=".ogg"], #bodyContent a.external[href $=".OGG"],
+#bodyContent a.external[href $=".mid"], #bodyContent a.external[href $=".MID"],
+#bodyContent a.external[href $=".midi"], #bodyContent a.external[href $=".MIDI"],
+#bodyContent a.external[href $=".mp3"], #bodyContent a.external[href $=".MP3"],
+#bodyContent a.external[href $=".wav"], #bodyContent a.external[href $=".WAV"],
+#bodyContent a.external[href $=".wma"], #bodyContent a.external[href $=".WMA"],
+.link-audio {
+	background: url("audio.png") center right no-repeat;
+	padding-right: 13px;
+}
+#bodyContent a.external[href $=".ogm"], #bodyContent a.external[href $=".OGM"],
+#bodyContent a.external[href $=".avi"], #bodyContent a.external[href $=".AVI"],
+#bodyContent a.external[href $=".mpeg"], #bodyContent a.external[href $=".MPEG"],
+#bodyContent a.external[href $=".mpg"], #bodyContent a.external[href $=".MPG"],
+.link-video {
+	background: url("video.png") center right no-repeat;
+	padding-right: 13px;
+}
+#bodyContent a.external[href $=".pdf"], #bodyContent a.external[href $=".PDF"],
+#bodyContent a.external[href *=".pdf#"], #bodyContent a.external[href *=".PDF#"],
+#bodyContent a.external[href *=".pdf?"], #bodyContent a.external[href *=".PDF?"],
+.link-document {
+	background: url("document.png") center right no-repeat;
+	padding-right: 12px;
+}
+
+/* disable interwiki styling */
+#bodyContent a.extiw,
+#bodyContent a.extiw:active {
+	color: #36b;
+	background: none;
+	padding: 0;
+}
+#bodyContent a.external {
+	color: #36b;
+}
+/* this can be used in the content area to switch off
+special external link styling */
+#bodyContent .plainlinks a {
+	background: none !important;
+	padding: 0 !important;
+}
+/*
+** Structural Elements
+*/
+
+/*
+** general portlet styles (elements in the quickbar)
+*/
+.portlet {
+	border: none;
+	margin: 0 0 .5em;
+	padding: 0;
+	float: none;
+	width: 11.6em;
+	overflow: hidden;
+}
+.portlet h4 {
+	font-size: 95%;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.portlet h5 {
+	background: transparent;
+	padding: 0 1em 0 .5em;
+	display: inline;
+	height: 1em;
+	text-transform: lowercase;
+	font-size: 91%;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.portlet h6 {
+	background: #ffae2e;
+	border: 1px solid #2f6fab;
+	border-style: solid solid none solid;
+	padding: 0 1em 0 1em;
+	text-transform: lowercase;
+	display: block;
+	font-size: 1em;
+	height: 1.2em;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.pBody {
+	font-size: 95%;
+	background-color: white;
+	color: black;
+	border-collapse: collapse;
+	border: 1px solid #aaa;
+	padding: 0 .8em .3em .5em;
+}
+.portlet h1,
+.portlet h2,
+.portlet h3,
+.portlet h4 {
+	margin: 0;
+	padding: 0;
+}
+.portlet ul {
+	line-height: 1.5em;
+	list-style-type: square;
+	list-style-image: url(bullet.gif);
+	font-size: 95%;
+}
+.portlet li {
+	padding: 0;
+	margin: 0;
+}
+
+/*
+** Logo properties
+*/
+
+@media handheld {
+	#p-logo { display: none }
+}
+
+/*
+** the navigation portlet
+*/
+
+#p-navigation .pBody {
+	padding-right: 0;
+}
+
+#p-navigation li.active a, #p-navigation li.active a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/*
+** Search portlet
+*/
+input.searchButton {
+	margin-top: 1px;
+	font-size: 95%;
+}
+#searchGoButton {
+	padding-left: .5em;
+	padding-right: .5em;
+	font-weight: bold;
+}
+#searchInput {
+	width: 10.9em;
+	margin: 0;
+	font-size: 95%;
+}
+#p-search .pBody {
+	padding: .5em .4em .4em .4em;
+	text-align: center;
+}
+
+/*
+** the personal toolbar
+*/
+#p-personal ul {
+	text-transform: lowercase;
+}
+#p-personal li.active {
+	font-weight: bold;
+}
+/*
+** the page-related actions- page/talk, edit etc
+*/
+#p-cactions .hiddenStructure {
+	display: none;
+}
+#p-cactions li a {
+	text-transform: lowercase;
+}
+
+/* TODO: #t-iscite is only used by the Cite extension, come up with some
+ * system which allows extensions to add to this file on the fly
+ */
+#t-ispermalink, #t-iscite {
+	color: #999;
+}
+/*
+** footer
+*/
+#footer {
+	background-color: white;
+	border-top: 1px solid #fabd23;
+	border-bottom: 1px solid #fabd23;
+	margin: .6em 0 1em 0;
+	padding: .4em 0 1.2em 0;
+	text-align: center;
+	font-size: 90%;
+}
+#footer li {
+	display: inline;
+	margin: 0 1.3em;
+}
+/* hide from incapable browsers */
+head:first-child+body #footer li { white-space: nowrap; }
+#f-poweredbyico, #f-copyrightico {
+	margin: 0 8px;
+	position: relative;
+	top: -2px; /* Bump it up just a tad */
+}
+#f-poweredbyico {
+	float: right;
+	height: 1%;
+}
+#f-copyrightico {
+	float: left;
+	height: 1%;
+}
+
+/* js pref toc */
+#preftoc {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	clear: both;
+}
+#preftoc li {
+	background-color: #f0f0f0;
+	color: #000;
+}
+#preftoc li.selected {
+	font-weight: bold;
+	background-color: #f9f9f9;
+	border: 1px solid #aaa;
+	border-bottom: none;
+	cursor: default;
+	top: 1px;
+	padding-top: 2px;
+	margin-right: -3px;
+}
+#preftoc > li.selected {
+	top: 2px;
+}
+#preftoc a,
+#preftoc a:active {
+	display: block;
+	color: #000;
+	padding: 0 .7em;
+	position: relative;
+	text-decoration: none;
+}
+#preftoc li.selected a {
+	cursor: default;
+	text-decoration: none;
+}
+#prefcontrol {
+	padding-top: 2em;
+	clear: both;
+}
+#preferences {
+	margin: 0;
+	border: 1px solid #aaa;
+	clear: both;
+	padding: 1.5em;
+	background-color: #F9F9F9;
+}
+.prefsection {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.prefsection fieldset {
+	border: 1px solid #aaa;
+	float: left;
+	margin-right: 2em;
+}
+.prefsection legend {
+	font-weight: bold;   
+}
+.prefsection table, .prefsection legend {
+	background-color: #F9F9F9;
+}
+div.prefsectiontip {
+	font-size: 95%;
+	margin-top: 0;
+	background-color: #FFC1C1;
+	padding: .2em .7em;
+	clear: both;
+}
+.btnSavePrefs {
+	font-weight: bold;
+	padding-left: .3em;
+	padding-right: .3em;
+}
+
+.preferences-login {
+	clear: both;
+	margin-bottom: 1.5em;
+}
+
+.prefcache {
+	font-size: 90%;
+	margin-top: 2em;
+}
+
+div#userloginForm form,
+div#userlogin form#userlogin2 {
+	margin: 0 3em 1em 0;
+	border: 1px solid #aaa;
+	clear: both;
+	padding: 1.5em 2em;
+	background-color: #f9f9f9;
+	float: left;
+}
+
+div#userloginForm table,
+div#userlogin form#userlogin2 table {
+	background-color: #f9f9f9;
+}
+
+div#userloginForm h2,
+div#userlogin form#userlogin2 h2 {
+	padding-top: 0;
+}
+
+div#userlogin .captcha {
+	border: 1px solid #bbb;
+	padding: 1.5em 2em;
+	width: 400px;
+	background-color: white;
+}
+
+
+#userloginprompt, #languagelinks {
+	font-size: 85%;
+}
+
+#login-sectiontip {
+	font-size: 85%;
+	line-height: 1.2;
+	padding-top: 2em;
+}
+
+#userlogin .loginText, #userlogin .loginPassword {
+	width: 12em;
+}
+
+#userloginlink a, #wpLoginattempt, #wpCreateaccount {
+	font-weight: bold;
+}
+
+/* more IE fixes */
+/* float/negative margin brokenness */
+* html #footer {margin-top: 0;}
+* html #column-content {
+	display: inline;
+	margin-bottom: 0;
+}
+* html div.editsection { font-size: smaller; }
+#pagehistory li.selected { position: relative; }
+
+/* Mac IE 5.0 fix; floated content turns invisible */
+* > html #column-content {
+	float: none;
+}
+* > html #column-one {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+* > html #footer {
+	margin-left: 13.2em;
+}
+.redirectText {
+	font-size: 150%;
+	margin: 5px;
+}
+
+.printfooter {
+	display: none;
+}
+
+.not-patrolled {
+	background-color: #ffa;
+}
+div.patrollink {
+	font-size: 75%;
+	text-align: right;
+}
+span.newpage, span.minor, span.searchmatch, span.bot {
+	font-weight: bold;
+}
+span.unpatrolled {
+	font-weight: bold;
+	color: red;
+}
+
+span.searchmatch {
+	color: red;
+}
+.sharedUploadNotice {
+	font-style: italic;
+}
+
+span.updatedmarker {
+	color: black;
+	background-color: #0f0;
+}
+
+table.gallery {
+	border: 1px solid #ccc;
+	margin: 2px;
+	padding: 2px;
+	background-color: white;
+}
+
+table.gallery tr {
+	vertical-align: top;
+}
+
+table.gallery td {
+	vertical-align: top;
+	background-color: #f9f9f9;
+	border: solid 2px white;
+}
+
+/* Keep this temporarily so that cached pages will display right */
+table.gallery td.galleryheader {
+    text-align: center;
+	font-weight: bold;
+}
+table.gallery caption {
+	font-weight: bold;
+}
+
+div.gallerybox {
+	margin: 2px;
+	width:  150px;
+}
+
+div.gallerybox div.thumb {
+	text-align: center;
+	border: 1px solid #ccc;
+	margin: 2px;
+}
+
+div.gallerytext {
+	font-size: 94%;
+	padding: 2px 4px;
+}
+
+span.comment {
+	font-style: italic;
+}
+
+span.changedby {
+	font-size: 95%;
+}
+
+.previewnote {
+	text-indent: 3em;
+	color: #c00;
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+.previewnote p {
+	margin: 0;
+	padding: 0;
+}
+
+.editExternally {
+	border: 1px solid gray;
+	background-color: #ffffff;
+	padding: 3px;
+	margin-top: 0.5em;
+	float: left;
+	font-size: small;
+	text-align: center;
+}
+.editExternallyHelp {
+	font-style: italic;
+	color: gray;
+}
+
+li span.deleted, span.history-deleted {
+	text-decoration: line-through;
+	color: #888;
+	font-style: italic;
+}
+
+.toggle {
+	margin-left: 2em;
+	text-indent: -2em;
+}
+
+/* Classes for EXIF data display */
+table.mw_metadata {
+	font-size: 0.8em;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+	width: 300px;
+}
+
+table.mw_metadata caption {
+	font-weight: bold;
+}
+
+table.mw_metadata th {
+	font-weight: normal;
+}
+
+table.mw_metadata td {
+	padding: 0.1em;
+}
+
+table.mw_metadata {
+	border: none;
+	border-collapse: collapse;
+}
+
+table.mw_metadata td, table.mw_metadata th {
+	text-align: center;
+	border: 1px solid #aaaaaa;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+}
+
+table.mw_metadata th {
+	background-color: #f9f9f9;
+}
+
+table.mw_metadata td {
+	background-color: #fcfcfc;
+}
+
+table.collapsed tr.collapsable {
+	display: none;
+}
+
+
+/* filetoc */
+ul#filetoc {
+	text-align: center;
+	border: 1px solid #aaaaaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+	margin-bottom: 0.5em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#filetoc li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 2em;
+}
+
+input#wpSummary {
+	width: 80%;
+}
+
+/* @bug 1714 */
+input#wpSave, input#wpDiff {
+	margin-right: 0.33em;
+}
+
+#editform .editOptions {
+	display: inline;
+}
+
+#wpSave {
+	font-weight: bold;
+}
+
+/* Classes for article validation */
+
+table.revisionform_default {
+	border: 1px solid #000000;
+}
+
+table.revisionform_focus {
+	border: 1px solid #000000;
+	background-color:#00BBFF;
+}
+
+tr.revision_tr_default {
+	background-color:#EEEEEE;
+}
+
+tr.revision_tr_first {
+	background-color:#DDDDDD;
+}
+
+p.revision_saved {
+	color: green;
+	font-weight:bold;
+}
+
+#mw_trackbacks {
+	border: solid 1px #bbbbff;
+	background-color: #eeeeff;
+	padding: 0.2em;
+}
+
+
+/* Allmessages table */
+
+#allmessagestable th {
+	background-color: #b2b2ff;
+}
+
+#allmessagestable tr.orig {
+	background-color: #ffe2e2;
+}
+
+#allmessagestable tr.new {
+	background-color: #e2ffe2;
+}
+
+#allmessagestable tr.def {
+	background-color: #f0f0ff;
+}
+
+
+/* noarticletext */
+div.noarticletext {
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: .2em 1em;
+	color: #000;
+}
+
+div#searchTargetContainer {
+	left:       10px;
+	top:        10px;
+	width:      90%;
+	background: white;
+}
+
+div#searchTarget {
+	padding:    3px;
+	margin:     5px;
+	background: #F0F0F0;
+	border:     solid 1px blue;
+}
+
+div#searchTarget ul li {
+	list-style: none;
+}
+
+div#searchTarget ul li:before {
+	color: orange;
+	content: "\00BB \0020";
+}
+
+div.multipageimagenavbox {
+   border: solid 1px silver;
+   padding: 4px;
+   margin: 1em;
+   -moz-border-radius: 6px;
+   background: #f0f0f0;
+}
+
+div.multipageimagenavbox div.thumb {
+   border: none;
+   margin-left: 2em;
+   margin-right: 2em;
+}
+
+div.multipageimagenavbox hr {
+   margin: 6px;
+}
+
+table.multipageimage td {
+   text-align: center;
+}
+
+/** Special:Version */
+
+table#sv-ext, table#sv-hooks {
+	margin: 1em;
+	padding:0em;
+}
+
+#sv-ext td, #sv-hooks td,
+#sv-ext th, #sv-hooks th {
+	border: 1px solid #A0A0A0;
+	padding: 0 0.15em 0 0.15em;
+}
+#sv-ext th, #sv-hooks th {
+	background-color: #F0F0F0;
+	color: black;
+	padding: 0 0.15em 0 0.15em;
+}
+tr.sv-space{
+	height: 0.8em;
+	border:none;
+}
+tr.sv-space td { display: none; }
+
+/*
+  Table pager (e.g. Special:Imagelist)
+  - remove underlines from the navigation link
+  - collapse borders
+  - set the borders to outsets (similar to Special:Allmessages)
+  - remove line wrapping for all td and th, set background color
+  - restore line wrapping for the last two table cells (description and size)
+*/
+.TablePager_nav a { text-decoration: none; }
+.TablePager { border-collapse: collapse; }
+.TablePager, .TablePager td, .TablePager th { 
+	border: 0.15em solid #777777;
+	padding: 0 0.15em 0 0.15em;
+}
+.TablePager th { background-color: #eeeeff }
+.TablePager td { background-color: #ffffff }
+.TablePager tr:hover td { background-color: #eeeeff }
+
+.imagelist td, .imagelist th { white-space: nowrap }
+.imagelist .TablePager_col_links { background-color: #eeeeff }
+.imagelist .TablePager_col_img_description { white-space: normal }
+.imagelist th.TablePager_sort { background-color: #ccccff }
+
+.templatesUsed { margin-top: 1.5em; }
+
+.mw-summary-preview {
+	margin: 0.1em 0;
+}
+@media handheld {
+	.nonessential {
+		/* Kill big bulky stuff that will clog up the screen */
+		display: none;
+	}
+}
+
+/**
+ * Here is some stuff that's ACTUALLY COMMON TO ALL SKINS.
+ * When the day comes, it can be moved to a *real* common.css.
+ */
+.mw-plusminus-null { color: #aaa; }
+.texvc { direction: ltr; unicode-bidi: embed; }
+/* Stop floats from intruding into edit area in previews */
+#toolbar, #wpTextbox1 { clear: both; }_Ehttp://entropie.digital.udk-berlin.de/skins/udkstyle/handheld.css?207Obbplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345MNOPQRSTUVWXYZ[\M]^bcU$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_Ehttp://entropie.digital.udk-berlin.de/skins/udkstyle/handheld.css?207“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uu≈k¯»”6789CWNS.keysZNS.objectsÄ©:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄ©DEFGHIJKLÄÄÄÄÄÄÄÄÄZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=100Ubytes_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-PatchXtext/css_Sat, 07 May 2011 12:42:43 GMTU23491_"483cdf-5bc3-43ae30775f200"_Mon, 24 Sep 2007 15:11:04 GMT“./_`£`a2_NSMutableDictionary\NSDictionary[√“./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d Ö ã ¶ ≠ ∞ ≥ ∑ ª æ ¡ ƒ «   Õ – ” ’ ◊ Ÿ € › ﬂ · „ Â Á È Î Ú ˙
+TYbmpvàäëô§¶∞≤¥∂∏∫ºæ¿¬ÃŒ–“‘÷ÿ⁄‹ﬁÈ˜˛$/=RX≠∂÷‹˙#9FINRf             g              t‘()*+OvÉ// MediaWiki JavaScript support functions
+
+var clientPC = navigator.userAgent.toLowerCase(); // Get client info
+var is_gecko = /gecko/.test( clientPC ) &&
+	!/khtml|spoofer|netscape\/7\.0/.test(clientPC);
+var webkit_match = clientPC.match(/applewebkit\/(\d+)/);
+if (webkit_match) {
+	var is_safari = clientPC.indexOf('applewebkit') != -1 &&
+		clientPC.indexOf('spoofer') == -1;
+	var is_safari_win = is_safari && clientPC.indexOf('windows') != -1;
+	var webkit_version = parseInt(webkit_match[1]);
+}
+var is_khtml = navigator.vendor == 'KDE' ||
+	( document.childNodes && !document.all && !navigator.taintEnabled );
+// For accesskeys; note that FF3+ is included here!
+var is_ff2 = /firefox\/[2-9]|minefield\/3/.test( clientPC );
+var is_ff2_ = /firefox\/2/.test( clientPC );
+// These aren't used here, but some custom scripts rely on them
+var is_ff2_win = is_ff2 && clientPC.indexOf('windows') != -1;
+var is_ff2_x11 = is_ff2 && clientPC.indexOf('x11') != -1;
+if (clientPC.indexOf('opera') != -1) {
+	var is_opera = true;
+	var is_opera_preseven = window.opera && !document.childNodes;
+	var is_opera_seven = window.opera && document.childNodes;
+	var is_opera_95 = /opera\/(9.[5-9]|[1-9][0-9])/.test( clientPC );
+}
+
+// Global external objects used by this script.
+/*extern ta, stylepath, skin */
+
+// add any onload functions in this hook (please don't hard-code any events in the xhtml source)
+var doneOnloadHook;
+
+if (!window.onloadFuncts) {
+	var onloadFuncts = [];
+}
+
+function addOnloadHook(hookFunct) {
+	// Allows add-on scripts to add onload functions
+	if(!doneOnloadHook) {
+		onloadFuncts[onloadFuncts.length] = hookFunct;
+	} else {
+		hookFunct();  // bug in MSIE script loading
+	}
+}
+
+function hookEvent(hookName, hookFunct) {
+	addHandler(window, hookName, hookFunct);
+}
+
+function importScript(page) {
+	var uri = wgScript + '?title=' +
+		encodeURIComponent(page.replace(/ /g,'_')).replace('%2F','/').replace('%3A',':') +
+		'&action=raw&ctype=text/javascript';
+	return importScriptURI(uri);
+}
+ 
+var loadedScripts = {}; // included-scripts tracker
+function importScriptURI(url) {
+	if (loadedScripts[url]) {
+		return null;
+	}
+	loadedScripts[url] = true;
+	var s = document.createElement('script');
+	s.setAttribute('src',url);
+	s.setAttribute('type','text/javascript');
+	document.getElementsByTagName('head')[0].appendChild(s);
+	return s;
+}
+ 
+function importStylesheet(page) {
+	return importStylesheetURI(wgScript + '?action=raw&ctype=text/css&title=' + encodeURIComponent(page.replace(/ /g,'_')));
+}
+ 
+function importStylesheetURI(url) {
+	return document.createStyleSheet ? document.createStyleSheet(url) : appendCSS('@import "' + url + '";');
+}
+ 
+function appendCSS(text) {
+	var s = document.createElement('style');
+	s.type = 'text/css';
+	s.rel = 'stylesheet';
+	if (s.styleSheet) s.styleSheet.cssText = text //IE
+	else s.appendChild(document.createTextNode(text + '')) //Safari sometimes borks on null
+	document.getElementsByTagName('head')[0].appendChild(s);
+	return s;
+}
+
+// special stylesheet links
+if (typeof stylepath != 'undefined' && typeof skin != 'undefined') {
+	if (is_opera_preseven) {
+		importStylesheetURI(stylepath+'/'+skin+'/Opera6Fixes.css');
+	} else if (is_opera_seven && !is_opera_95) {
+		importStylesheetURI(stylepath+'/'+skin+'/Opera7Fixes.css');
+	} else if (is_opera_95) {
+		importStylesheetURI(stylepath+'/'+skin+'/Opera9Fixes.css');
+	} else if (is_khtml) {
+		importStylesheetURI(stylepath+'/'+skin+'/KHTMLFixes.css');
+	} else if (is_ff2_) {
+		importStylesheetURI(stylepath+'/'+skin+'/FF2Fixes.css');
+	}
+}
+
+if (wgBreakFrames) {
+	// Un-trap us from framesets
+	if (window.top != window) {
+		window.top.location = window.location;
+	}
+}
+
+function showTocToggle() {
+	if (document.createTextNode) {
+		// Uses DOM calls to avoid document.write + XHTML issues
+
+		var linkHolder = document.getElementById('toctitle');
+		if (!linkHolder) {
+			return;
+		}
+
+		var outerSpan = document.createElement('span');
+		outerSpan.className = 'toctoggle';
+
+		var toggleLink = document.createElement('a');
+		toggleLink.id = 'togglelink';
+		toggleLink.className = 'internal';
+		toggleLink.href = 'javascript:toggleToc()';
+		toggleLink.appendChild(document.createTextNode(tocHideText));
+
+		outerSpan.appendChild(document.createTextNode('['));
+		outerSpan.appendChild(toggleLink);
+		outerSpan.appendChild(document.createTextNode(']'));
+
+		linkHolder.appendChild(document.createTextNode(' '));
+		linkHolder.appendChild(outerSpan);
+
+		var cookiePos = document.cookie.indexOf("hidetoc=");
+		if (cookiePos > -1 && document.cookie.charAt(cookiePos + 8) == 1) {
+			toggleToc();
+		}
+	}
+}
+
+function changeText(el, newText) {
+	// Safari work around
+	if (el.innerText) {
+		el.innerText = newText;
+	} else if (el.firstChild && el.firstChild.nodeValue) {
+		el.firstChild.nodeValue = newText;
+	}
+}
+
+function toggleToc() {
+	var toc = document.getElementById('toc').getElementsByTagName('ul')[0];
+	var toggleLink = document.getElementById('togglelink');
+
+	if (toc && toggleLink && toc.style.display == 'none') {
+		changeText(toggleLink, tocHideText);
+		toc.style.display = 'block';
+		document.cookie = "hidetoc=0";
+	} else {
+		changeText(toggleLink, tocShowText);
+		toc.style.display = 'none';
+		document.cookie = "hidetoc=1";
+	}
+}
+
+var mwEditButtons = [];
+var mwCustomEditButtons = []; // eg to add in MediaWiki:Common.js
+
+function escapeQuotes(text) {
+	var re = new RegExp("'","g");
+	text = text.replace(re,"\\'");
+	re = new RegExp("\\n","g");
+	text = text.replace(re,"\\n");
+	return escapeQuotesHTML(text);
+}
+
+function escapeQuotesHTML(text) {
+	var re = new RegExp('&',"g");
+	text = text.replace(re,"&amp;");
+	re = new RegExp('"',"g");
+	text = text.replace(re,"&quot;");
+	re = new RegExp('<',"g");
+	text = text.replace(re,"&lt;");
+	re = new RegExp('>',"g");
+	text = text.replace(re,"&gt;");
+	return text;
+}
+
+
+/**
+ * Set the accesskey prefix based on browser detection.
+ */
+var tooltipAccessKeyPrefix = 'alt-';
+if (is_opera) {
+	tooltipAccessKeyPrefix = 'shift-esc-';
+} else if (!is_safari_win && is_safari && webkit_version > 526) {
+	tooltipAccessKeyPrefix = 'ctrl-alt-';
+} else if (!is_safari_win && (is_safari
+		|| clientPC.indexOf('mac') != -1
+		|| clientPC.indexOf('konqueror') != -1 )) {
+	tooltipAccessKeyPrefix = 'ctrl-';
+} else if (is_ff2) {
+	tooltipAccessKeyPrefix = 'alt-shift-';
+}
+var tooltipAccessKeyRegexp = /\[(ctrl-)?(alt-)?(shift-)?(esc-)?(.)\]$/;
+
+/**
+ * Add the appropriate prefix to the accesskey shown in the tooltip.
+ * If the nodeList parameter is given, only those nodes are updated;
+ * otherwise, all the nodes that will probably have accesskeys by
+ * default are updated.
+ *
+ * @param Array nodeList -- list of elements to update
+ */
+function updateTooltipAccessKeys( nodeList ) {
+	if ( !nodeList ) {
+		// skins without a "column-one" element don't seem to have links with accesskeys either
+		var columnOne = document.getElementById("column-one");
+		if ( columnOne )
+			updateTooltipAccessKeys( columnOne.getElementsByTagName("a") );
+		// these are rare enough that no such optimization is needed
+		updateTooltipAccessKeys( document.getElementsByTagName("input") );
+		updateTooltipAccessKeys( document.getElementsByTagName("label") );
+		return;
+	}
+
+	for ( var i = 0; i < nodeList.length; i++ ) {
+		var element = nodeList[i];
+		var tip = element.getAttribute("title");
+		if ( tip && tooltipAccessKeyRegexp.exec(tip) ) {
+			tip = tip.replace(tooltipAccessKeyRegexp,
+					  "["+tooltipAccessKeyPrefix+"$5]");
+			element.setAttribute("title", tip );
+		}
+	}
+}
+
+/**
+ * Add a link to one of the portlet menus on the page, including:
+ *
+ * p-cactions: Content actions (shown as tabs above the main content in Monobook)
+ * p-personal: Personal tools (shown at the top right of the page in Monobook)
+ * p-navigation: Navigation
+ * p-tb: Toolbox
+ *
+ * This function exists for the convenience of custom JS authors.  All
+ * but the first three parameters are optional, though providing at
+ * least an id and a tooltip is recommended.
+ *
+ * By default the new link will be added to the end of the list.  To
+ * add the link before a given existing item, pass the DOM node of
+ * that item (easily obtained with document.getElementById()) as the
+ * nextnode parameter; to add the link _after_ an existing item, pass
+ * the node's nextSibling instead.
+ *
+ * @param String portlet -- id of the target portlet ("p-cactions", "p-personal", "p-navigation" or "p-tb")
+ * @param String href -- link URL
+ * @param String text -- link text (will be automatically lowercased by CSS for p-cactions in Monobook)
+ * @param String id -- id of the new item, should be unique and preferably have the appropriate prefix ("ca-", "pt-", "n-" or "t-")
+ * @param String tooltip -- text to show when hovering over the link, without accesskey suffix
+ * @param String accesskey -- accesskey to activate this link (one character, try to avoid conflicts)
+ * @param Node nextnode -- the DOM node before which the new item should be added, should be another item in the same list
+ *
+ * @return Node -- the DOM node of the new item (an LI element) or null
+ */
+function addPortletLink(portlet, href, text, id, tooltip, accesskey, nextnode) {
+	var node = document.getElementById(portlet);
+	if ( !node ) return null;
+	node = node.getElementsByTagName( "ul" )[0];
+	if ( !node ) return null;
+
+	var link = document.createElement( "a" );
+	link.appendChild( document.createTextNode( text ) );
+	link.href = href;
+
+	var item = document.createElement( "li" );
+	item.appendChild( link );
+	if ( id ) item.id = id;
+
+	if ( accesskey ) {
+		link.setAttribute( "accesskey", accesskey );
+		tooltip += " ["+accesskey+"]";
+	}
+	if ( tooltip ) {
+		link.setAttribute( "title", tooltip );
+	}
+	if ( accesskey && tooltip ) {
+		updateTooltipAccessKeys( new Array( link ) );
+	}
+
+	if ( nextnode && nextnode.parentNode == node )
+		node.insertBefore( item, nextnode );
+	else
+		node.appendChild( item );  // IE compatibility (?)
+
+	return item;
+}
+
+function getInnerText(el) {
+	if (typeof el == "string") return el;
+	if (typeof el == "undefined") { return el };
+	if (el.textContent) return el.textContent; // not needed but it is faster
+	if (el.innerText) return el.innerText;     // IE doesn't have textContent
+	var str = "";
+
+	var cs = el.childNodes;
+	var l = cs.length;
+	for (var i = 0; i < l; i++) {
+		switch (cs[i].nodeType) {
+			case 1: //ELEMENT_NODE
+				str += ts_getInnerText(cs[i]);
+				break;
+			case 3:	//TEXT_NODE
+				str += cs[i].nodeValue;
+				break;
+		}
+	}
+	return str;
+}
+
+
+/**
+ * Set up accesskeys/tooltips from the deprecated ta array.  If doId
+ * is specified, only set up for that id.  Note that this function is
+ * deprecated and will not be supported indefinitely -- use
+ * updateTooltipAccessKey() instead.
+ *
+ * @param mixed doId string or null
+ */
+function akeytt( doId ) {
+	// A lot of user scripts (and some of the code below) break if
+	// ta isn't defined, so we make sure it is.  Explictly using
+	// window.ta avoids a "ta is not defined" error.
+	if (!window.ta) window.ta = new Array;
+
+	// Make a local, possibly restricted, copy to avoid clobbering
+	// the original.
+	var ta;
+	if ( doId ) {
+		ta = [doId];
+	} else {
+		ta = window.ta;
+	}
+
+	// Now deal with evil deprecated ta
+	var watchCheckboxExists = document.getElementById( 'wpWatchthis' ) ? true : false;
+	for (var id in ta) {
+		var n = document.getElementById(id);
+		if (n) {
+			var a = null;
+			var ak = '';
+			// Are we putting accesskey in it
+			if (ta[id][0].length > 0) {
+				// Is this object a object? If not assume it's the next child.
+
+				if (n.nodeName.toLowerCase() == "a") {
+					a = n;
+				} else {
+					a = n.childNodes[0];
+				}
+			 	// Don't add an accesskey for the watch tab if the watch
+			 	// checkbox is also available.
+				if (a && ((id != 'ca-watch' && id != 'ca-unwatch') || !watchCheckboxExists)) {
+					a.accessKey = ta[id][0];
+					ak = ' ['+tooltipAccessKeyPrefix+ta[id][0]+']';
+				}
+			} else {
+				// We don't care what type the object is when assigning tooltip
+				a = n;
+				ak = '';
+			}
+
+			if (a) {
+				a.title = ta[id][1]+ak;
+			}
+		}
+	}
+}
+
+var checkboxes;
+var lastCheckbox;
+
+function setupCheckboxShiftClick() {
+	checkboxes = [];
+	lastCheckbox = null;
+	var inputs = document.getElementsByTagName('input');
+	addCheckboxClickHandlers(inputs);
+}
+
+function addCheckboxClickHandlers(inputs, start) {
+	if ( !start) start = 0;
+
+	var finish = start + 250;
+	if ( finish > inputs.length )
+		finish = inputs.length;
+
+	for ( var i = start; i < finish; i++ ) {
+		var cb = inputs[i];
+		if ( !cb.type || cb.type.toLowerCase() != 'checkbox' )
+			continue;
+		var end = checkboxes.length;
+		checkboxes[end] = cb;
+		cb.index = end;
+		cb.onclick = checkboxClickHandler;
+	}
+
+	if ( finish < inputs.length ) {
+		setTimeout( function () {
+			addCheckboxClickHandlers(inputs, finish);
+		}, 200 );
+	}
+}
+
+function checkboxClickHandler(e) {
+	if (typeof e == 'undefined') {
+		e = window.event;
+	}
+	if ( !e.shiftKey || lastCheckbox === null ) {
+		lastCheckbox = this.index;
+		return true;
+	}
+	var endState = this.checked;
+	var start, finish;
+	if ( this.index < lastCheckbox ) {
+		start = this.index + 1;
+		finish = lastCheckbox;
+	} else {
+		start = lastCheckbox;
+		finish = this.index - 1;
+	}
+	for (var i = start; i <= finish; ++i ) {
+		checkboxes[i].checked = endState;
+	}
+	lastCheckbox = this.index;
+	return true;
+}
+
+function toggle_element_activation(ida,idb) {
+	if (!document.getElementById) {
+		return;
+	}
+	document.getElementById(ida).disabled=true;
+	document.getElementById(idb).disabled=false;
+}
+
+function toggle_element_check(ida,idb) {
+	if (!document.getElementById) {
+		return;
+	}
+	document.getElementById(ida).checked=true;
+	document.getElementById(idb).checked=false;
+}
+
+/*
+	Written by Jonathan Snook, http://www.snook.ca/jonathan
+	Add-ons by Robert Nyman, http://www.robertnyman.com
+	Author says "The credit comment is all it takes, no license. Go crazy with it!:-)"
+	From http://www.robertnyman.com/2005/11/07/the-ultimate-getelementsbyclassname/
+*/
+function getElementsByClassName(oElm, strTagName, oClassNames){
+	var arrReturnElements = new Array();
+	if ( typeof( oElm.getElementsByClassName ) == "function" ) {
+		/* Use a native implementation where possible FF3, Saf3.2, Opera 9.5 */
+		var arrNativeReturn = oElm.getElementsByClassName( oClassNames );
+		if ( strTagName == "*" )
+			return arrNativeReturn;
+		for ( var h=0; h < arrNativeReturn.length; h++ ) {
+			if( arrNativeReturn[h].tagName.toLowerCase() == strTagName.toLowerCase() )
+				arrReturnElements[arrReturnElements.length] = arrNativeReturn[h];
+		}
+		return arrReturnElements;
+	}
+	var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+	var arrRegExpClassNames = new Array();
+	if(typeof oClassNames == "object"){
+		for(var i=0; i<oClassNames.length; i++){
+			arrRegExpClassNames[arrRegExpClassNames.length] =
+				new RegExp("(^|\\s)" + oClassNames[i].replace(/\-/g, "\\-") + "(\\s|$)");
+		}
+	}
+	else{
+		arrRegExpClassNames[arrRegExpClassNames.length] =
+			new RegExp("(^|\\s)" + oClassNames.replace(/\-/g, "\\-") + "(\\s|$)");
+	}
+	var oElement;
+	var bMatchesAll;
+	for(var j=0; j<arrElements.length; j++){
+		oElement = arrElements[j];
+		bMatchesAll = true;
+		for(var k=0; k<arrRegExpClassNames.length; k++){
+			if(!arrRegExpClassNames[k].test(oElement.className)){
+				bMatchesAll = false;
+				break;
+			}
+		}
+		if(bMatchesAll){
+			arrReturnElements[arrReturnElements.length] = oElement;
+		}
+	}
+	return (arrReturnElements)
+}
+
+function redirectToFragment(fragment) {
+	var match = navigator.userAgent.match(/AppleWebKit\/(\d+)/);
+	if (match) {
+		var webKitVersion = parseInt(match[1]);
+		if (webKitVersion < 420) {
+			// Released Safari w/ WebKit 418.9.1 messes up horribly
+			// Nightlies of 420+ are ok
+			return;
+		}
+	}
+	if (is_gecko) {
+		// Mozilla needs to wait until after load, otherwise the window doesn't scroll
+		addOnloadHook(function () {
+			if (window.location.hash == "")
+				window.location.hash = fragment;
+		});
+	} else {
+		if (window.location.hash == "")
+			window.location.hash = fragment;
+	}
+}
+
+/*
+ * Table sorting script based on one (c) 1997-2006 Stuart Langridge and Joost
+ * de Valk:
+ * http://www.joostdevalk.nl/code/sortable-table/
+ * http://www.kryogenix.org/code/browser/sorttable/
+ *
+ * @todo don't break on colspans/rowspans (bug 8028)
+ * @todo language-specific digit grouping/decimals (bug 8063)
+ * @todo support all accepted date formats (bug 8226)
+ */
+
+var ts_image_path = stylepath+"/common/images/";
+var ts_image_up = "sort_up.gif";
+var ts_image_down = "sort_down.gif";
+var ts_image_none = "sort_none.gif";
+var ts_europeandate = wgContentLanguage != "en"; // The non-American-inclined can change to "true"
+var ts_alternate_row_colors = false;
+var ts_number_transform_table = null;
+var ts_number_regex = null;
+
+function sortables_init() {
+	var idnum = 0;
+	// Find all tables with class sortable and make them sortable
+	var tables = getElementsByClassName(document, "table", "sortable");
+	for (var ti = 0; ti < tables.length ; ti++) {
+		if (!tables[ti].id) {
+			tables[ti].setAttribute('id','sortable_table_id_'+idnum);
+			++idnum;
+		}
+		ts_makeSortable(tables[ti]);
+	}
+}
+
+function ts_makeSortable(table) {
+	var firstRow;
+	if (table.rows && table.rows.length > 0) {
+		if (table.tHead && table.tHead.rows.length > 0) {
+			firstRow = table.tHead.rows[table.tHead.rows.length-1];
+		} else {
+			firstRow = table.rows[0];
+		}
+	}
+	if (!firstRow) return;
+
+	// We have a first row: assume it's the header, and make its contents clickable links
+	for (var i = 0; i < firstRow.cells.length; i++) {
+		var cell = firstRow.cells[i];
+		if ((" "+cell.className+" ").indexOf(" unsortable ") == -1) {
+			cell.innerHTML += '&nbsp;&nbsp;'
+				+ '<a href="#" class="sortheader" '
+				+ 'onclick="ts_resortTable(this);return false;">'
+				+ '<span class="sortarrow">'
+				+ '<img src="'
+				+ ts_image_path
+				+ ts_image_none
+				+ '" alt="&darr;"/></span></a>';
+		}
+	}
+	if (ts_alternate_row_colors) {
+		ts_alternate(table);
+	}
+}
+
+function ts_getInnerText(el) {
+	return getInnerText( el );
+}
+
+function ts_resortTable(lnk) {
+	// get the span
+	var span = lnk.getElementsByTagName('span')[0];
+
+	var td = lnk.parentNode;
+	var tr = td.parentNode;
+	var column = td.cellIndex;
+
+	var table = tr.parentNode;
+	while (table && !(table.tagName && table.tagName.toLowerCase() == 'table'))
+		table = table.parentNode;
+	if (!table) return;
+
+	if (table.rows.length <= 1) return;
+
+	// Generate the number transform table if it's not done already
+	if (ts_number_transform_table == null) {
+		ts_initTransformTable();
+	}
+
+	// Work out a type for the column
+	// Skip the first row if that's where the headings are
+	var rowStart = (table.tHead && table.tHead.rows.length > 0 ? 0 : 1);
+
+	var itm = "";
+	for (var i = rowStart; i < table.rows.length; i++) {
+		if (table.rows[i].cells.length > column) {
+			itm = ts_getInnerText(table.rows[i].cells[column]);
+			itm = itm.replace(/^[\s\xa0]+/, "").replace(/[\s\xa0]+$/, "");
+			if (itm != "") break;
+		}
+	}
+
+	// TODO: bug 8226, localised date formats
+	var sortfn = ts_sort_generic;
+	var preprocessor = ts_toLowerCase;
+	if (/^\d\d[\/. -][a-zA-Z]{3}[\/. -]\d\d\d\d$/.test(itm)) {
+		preprocessor = ts_dateToSortKey;
+	} else if (/^\d\d[\/.-]\d\d[\/.-]\d\d\d\d$/.test(itm)) {
+		preprocessor = ts_dateToSortKey;
+	} else if (/^\d\d[\/.-]\d\d[\/.-]\d\d$/.test(itm)) {
+		preprocessor = ts_dateToSortKey;
+	// pound dollar euro yen currency cents
+	} else if (/(^[\u00a3$\u20ac\u00a4\u00a5]|\u00a2$)/.test(itm)) {
+		preprocessor = ts_currencyToSortKey;
+	} else if (ts_number_regex.test(itm)) {
+		preprocessor = ts_parseFloat;
+	}
+
+	var reverse = (span.getAttribute("sortdir") == 'down');
+
+	var newRows = new Array();
+	var staticRows = new Array();
+	for (var j = rowStart; j < table.rows.length; j++) {
+		var row = table.rows[j];
+		if((" "+row.className+" ").indexOf(" unsortable ") < 0) {
+			var keyText = ts_getInnerText(row.cells[column]);
+			var oldIndex = (reverse ? -j : j);
+			var preprocessed = preprocessor( keyText );
+
+			newRows[newRows.length] = new Array(row, preprocessed, oldIndex);
+		} else staticRows[staticRows.length] = new Array(row, false, j-rowStart);
+	}
+
+	newRows.sort(sortfn);
+
+	var arrowHTML;
+	if (reverse) {
+		arrowHTML = '<img src="'+ ts_image_path + ts_image_down + '" alt="&darr;"/>';
+		newRows.reverse();
+		span.setAttribute('sortdir','up');
+	} else {
+		arrowHTML = '<img src="'+ ts_image_path + ts_image_up + '" alt="&uarr;"/>';
+		span.setAttribute('sortdir','down');
+	}
+
+	for (var i = 0; i < staticRows.length; i++) {
+		var row = staticRows[i];
+		newRows.splice(row[2], 0, row);
+	}
+
+	// We appendChild rows that already exist to the tbody, so it moves them rather than creating new ones
+	// don't do sortbottom rows
+	for (var i = 0; i < newRows.length; i++) {
+		if ((" "+newRows[i][0].className+" ").indexOf(" sortbottom ") == -1)
+			table.tBodies[0].appendChild(newRows[i][0]);
+	}
+	// do sortbottom rows only
+	for (var i = 0; i < newRows.length; i++) {
+		if ((" "+newRows[i][0].className+" ").indexOf(" sortbottom ") != -1)
+			table.tBodies[0].appendChild(newRows[i][0]);
+	}
+
+	// Delete any other arrows there may be showing
+	var spans = getElementsByClassName(tr, "span", "sortarrow");
+	for (var i = 0; i < spans.length; i++) {
+		spans[i].innerHTML = '<img src="'+ ts_image_path + ts_image_none + '" alt="&darr;"/>';
+	}
+	span.innerHTML = arrowHTML;
+
+	if (ts_alternate_row_colors) {
+		ts_alternate(table);
+	}
+}
+
+function ts_initTransformTable() {
+	if ( typeof wgSeparatorTransformTable == "undefined"
+			|| ( wgSeparatorTransformTable[0] == '' && wgDigitTransformTable[2] == '' ) )
+	{
+		digitClass = "[0-9,.]";
+		ts_number_transform_table = false;
+	} else {
+		ts_number_transform_table = {};
+		// Unpack the transform table
+		// Separators
+		ascii = wgSeparatorTransformTable[0].split("\t");
+		localised = wgSeparatorTransformTable[1].split("\t");
+		for ( var i = 0; i < ascii.length; i++ ) { 
+			ts_number_transform_table[localised[i]] = ascii[i];
+		}
+		// Digits
+		ascii = wgDigitTransformTable[0].split("\t");
+		localised = wgDigitTransformTable[1].split("\t");
+		for ( var i = 0; i < ascii.length; i++ ) { 
+			ts_number_transform_table[localised[i]] = ascii[i];
+		}
+
+		// Construct regex for number identification
+		digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',', '\\.'];
+		maxDigitLength = 1;
+		for ( var digit in ts_number_transform_table ) {
+			// Escape regex metacharacters
+			digits.push( 
+				digit.replace( /[\\\\$\*\+\?\.\(\)\|\{\}\[\]\-]/,
+					function( s ) { return '\\' + s; } )
+			);
+			if (digit.length > maxDigitLength) {
+				maxDigitLength = digit.length;
+			}
+		}
+		if ( maxDigitLength > 1 ) {
+			digitClass = '[' + digits.join( '', digits ) + ']';
+		} else {
+			digitClass = '(' + digits.join( '|', digits ) + ')';
+		}
+	}
+
+	// We allow a trailing percent sign, which we just strip.  This works fine
+	// if percents and regular numbers aren't being mixed.
+	ts_number_regex = new RegExp(
+		"^(" +
+			"[+-]?[0-9][0-9,]*(\\.[0-9,]*)?(E[+-]?[0-9][0-9,]*)?" + // Fortran-style scientific
+			"|" +
+			"[+-]?" + digitClass + "+%?" + // Generic localised
+		")$", "i"
+	);
+}
+
+function ts_toLowerCase( s ) {
+	return s.toLowerCase();
+}
+
+function ts_dateToSortKey(date) {	
+	// y2k notes: two digit years less than 50 are treated as 20XX, greater than 50 are treated as 19XX
+	if (date.length == 11) {
+		switch (date.substr(3,3).toLowerCase()) {
+			case "jan": var month = "01"; break;
+			case "feb": var month = "02"; break;
+			case "mar": var month = "03"; break;
+			case "apr": var month = "04"; break;
+			case "may": var month = "05"; break;
+			case "jun": var month = "06"; break;
+			case "jul": var month = "07"; break;
+			case "aug": var month = "08"; break;
+			case "sep": var month = "09"; break;
+			case "oct": var month = "10"; break;
+			case "nov": var month = "11"; break;
+			case "dec": var month = "12"; break;
+			// default: var month = "00";
+		}
+		return date.substr(7,4)+month+date.substr(0,2);
+	} else if (date.length == 10) {
+		if (ts_europeandate == false) {
+			return date.substr(6,4)+date.substr(0,2)+date.substr(3,2);
+		} else {
+			return date.substr(6,4)+date.substr(3,2)+date.substr(0,2);
+		}
+	} else if (date.length == 8) {
+		yr = date.substr(6,2);
+		if (parseInt(yr) < 50) { 
+			yr = '20'+yr; 
+		} else { 
+			yr = '19'+yr; 
+		}
+		if (ts_europeandate == true) {
+			return yr+date.substr(3,2)+date.substr(0,2);
+		} else {
+			return yr+date.substr(0,2)+date.substr(3,2);
+		}
+	}
+	return "00000000";
+}
+
+function ts_parseFloat( s ) {
+	if ( !s ) {
+		return 0;
+	}
+	if (ts_number_transform_table != false) {
+		var newNum = '', c;
+		
+		for ( var p = 0; p < s.length; p++ ) {
+			c = s.charAt( p );
+			if (c in ts_number_transform_table) {
+				newNum += ts_number_transform_table[c];
+			} else {
+				newNum += c;
+			}
+		}
+		s = newNum;
+	}
+
+	num = parseFloat(s.replace(/,/g, ""));
+	return (isNaN(num) ? 0 : num);
+}
+
+function ts_currencyToSortKey( s ) {
+	return ts_parseFloat(s.replace(/[^0-9.,]/g,''));
+}
+
+function ts_sort_generic(a, b) {
+	return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : a[2] - b[2];
+}
+
+function ts_alternate(table) {
+	// Take object table and get all it's tbodies.
+	var tableBodies = table.getElementsByTagName("tbody");
+	// Loop through these tbodies
+	for (var i = 0; i < tableBodies.length; i++) {
+		// Take the tbody, and get all it's rows
+		var tableRows = tableBodies[i].getElementsByTagName("tr");
+		// Loop through these rows
+		// Start at 1 because we want to leave the heading row untouched
+		for (var j = 0; j < tableRows.length; j++) {
+			// Check if j is even, and apply classes for both possible results
+			var oldClasses = tableRows[j].className.split(" ");
+			var newClassName = "";
+			for (var k = 0; k < oldClasses.length; k++) {
+				if (oldClasses[k] != "" && oldClasses[k] != "even" && oldClasses[k] != "odd")
+					newClassName += oldClasses[k] + " ";
+			}
+			tableRows[j].className = newClassName + (j % 2 == 0 ? "even" : "odd");
+		}
+	}
+}
+
+/*
+ * End of table sorting code
+ */
+ 
+ 
+/**
+ * Add a cute little box at the top of the screen to inform the user of
+ * something, replacing any preexisting message.
+ *
+ * @param String -or- Dom Object message HTML to be put inside the right div
+ * @param String className   Used in adding a class; should be different for each
+ *   call to allow CSS/JS to hide different boxes.  null = no class used.
+ * @return Boolean       True on success, false on failure
+ */
+function jsMsg( message, className ) {
+	if ( !document.getElementById ) {
+		return false;
+	}
+	// We special-case skin structures provided by the software.  Skins that
+	// choose to abandon or significantly modify our formatting can just define
+	// an mw-js-message div to start with.
+	var messageDiv = document.getElementById( 'mw-js-message' );
+	if ( !messageDiv ) {
+		messageDiv = document.createElement( 'div' );
+		if ( document.getElementById( 'column-content' )
+		&& document.getElementById( 'content' ) ) {
+			// MonoBook, presumably
+			document.getElementById( 'content' ).insertBefore(
+				messageDiv,
+				document.getElementById( 'content' ).firstChild
+			);
+		} else if ( document.getElementById('content')
+		&& document.getElementById( 'article' ) ) {
+			// Non-Monobook but still recognizable (old-style)
+			document.getElementById( 'article').insertBefore(
+				messageDiv,
+				document.getElementById( 'article' ).firstChild
+			);
+		} else {
+			return false;
+		}
+	}
+
+	messageDiv.setAttribute( 'id', 'mw-js-message' );
+	messageDiv.style.display = 'block';
+	if( className ) {
+		messageDiv.setAttribute( 'class', 'mw-js-message-'+className );
+	}
+	
+	if (typeof message === 'object') {
+		while (messageDiv.hasChildNodes()) // Remove old content
+			messageDiv.removeChild(messageDiv.firstChild);
+		messageDiv.appendChild (message); // Append new content
+	}
+	else {
+		messageDiv.innerHTML = message;
+	}
+	return true;
+}
+
+/**
+ * Inject a cute little progress spinner after the specified element
+ *
+ * @param element Element to inject after
+ * @param id Identifier string (for use with removeSpinner(), below)
+ */
+function injectSpinner( element, id ) {
+	var spinner = document.createElement( "img" );
+	spinner.id = "mw-spinner-" + id;
+	spinner.src = stylepath + "/common/images/spinner.gif";
+	spinner.alt = spinner.title = "...";
+	if( element.nextSibling ) {
+		element.parentNode.insertBefore( spinner, element.nextSibling );
+	} else {
+		element.parentNode.appendChild( spinner );
+	}
+}
+
+/**
+ * Remove a progress spinner added with injectSpinner()
+ *
+ * @param id Identifier string
+ */
+function removeSpinner( id ) {
+	var spinner = document.getElementById( "mw-spinner-" + id );
+	if( spinner ) {
+		spinner.parentNode.removeChild( spinner );
+	}
+}
+
+function runOnloadHook() {
+	// don't run anything below this for non-dom browsers
+	if (doneOnloadHook || !(document.getElementById && document.getElementsByTagName)) {
+		return;
+	}
+
+	// set this before running any hooks, since any errors below
+	// might cause the function to terminate prematurely
+	doneOnloadHook = true;
+
+	updateTooltipAccessKeys( null );
+	akeytt( null );
+	setupCheckboxShiftClick();
+	sortables_init();
+
+	// Run any added-on functions
+	for (var i = 0; i < onloadFuncts.length; i++) {
+		onloadFuncts[i]();
+	}
+}
+
+/**
+ * Add an event handler to an element
+ *
+ * @param Element element Element to add handler to
+ * @param String attach Event to attach to
+ * @param callable handler Event handler callback
+ */
+function addHandler( element, attach, handler ) {
+	if( window.addEventListener ) {
+		element.addEventListener( attach, handler, false );
+	} else if( window.attachEvent ) {
+		element.attachEvent( 'on' + attach, handler );
+	}
+}
+
+/**
+ * Add a click event handler to an element
+ *
+ * @param Element element Element to add handler to
+ * @param callable handler Event handler callback
+ */
+function addClickHandler( element, handler ) {
+	addHandler( element, 'click', handler );
+}
+
+/**
+ * Removes an event handler from an element
+ *
+ * @param Element element Element to remove handler from
+ * @param String remove Event to remove
+ * @param callable handler Event handler callback to remove
+ */
+function removeHandler( element, remove, handler ) {
+	if( window.removeEventListener ) {
+		element.removeEventListener( remove, handler, false );
+	} else if( window.detachEvent ) {
+		element.detachEvent( 'on' + remove, handler );
+	}
+}
+//note: all skins should call runOnloadHook() at the end of html output,
+//      so the below should be redundant. It's there just in case.
+hookEvent("load", runOnloadHook);
+_Bhttp://entropie.digital.udk-berlin.de/skins/common/wikibits.js?207_application/javascriptOnbplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345MNOPQRSTUVWXYZ[\M]^bcU$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_Bhttp://entropie.digital.udk-berlin.de/skins/common/wikibits.js?207“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uu≈\Å»”6789CWNS.keysZNS.objectsÄ©:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄ©DEFGHIJKLÄÄÄÄÄÄÄÄÄZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=99Ubytes_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-Patch_application/javascript_Sat, 07 May 2011 12:42:43 GMTU30339_"3ee8ef-7683-4880fd149bc00"_Wed, 02 Jun 2010 17:57:04 GMT“./_`£`a2_NSMutableDictionary\NSDictionaryvÉ“./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d Ö ã ¶ ≠ ∞ ≥ ∑ ª æ ¡ ƒ «   Õ – ” ’ ◊ Ÿ € › ﬂ · „ Â Á È Î Ú ˙
+QV_jms|Öáéñ°£≠Ø±≥µ∑πªΩø…ÀÕœ—”’◊Ÿ€ÊÙ˚!,:NT©¬‚Ë&+/ERUZ^r             g              Ä‘-./Ok/* KHTML fix stylesheet */
+/* work around the horizontal scrollbars */
+#column-content { margin-left: 0; }
+_Chttp://entropie.digital.udk-berlin.de/skins/udkstyle/KHTMLFixes.cssOZbplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345MNOPQRSTUVWXYZ[\M]^bcU$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_Chttp://entropie.digital.udk-berlin.de/skins/udkstyle/KHTMLFixes.css“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uu≈5(ç»”6789CWNS.keysZNS.objectsÄ©:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄ©DEFGHIJKLÄÄÄÄÄÄÄÄÄZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=97Ubytes_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-PatchXtext/css_Sat, 07 May 2011 12:42:43 GMTS107_"483ce6-6b-43ae30775f200"_Mon, 24 Sep 2007 15:11:04 GMT“./_`£`a2_NSMutableDictionary\NSDictionaryk“./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d Ö ã ¶ ≠ ∞ ≥ ∑ ª æ ¡ ƒ «   Õ – ” ’ ◊ Ÿ € › ﬂ · „ Â Á È Î Ú ˙
+RW`knt}Üàèó¢§Æ∞≤¥∂∏∫ºæ¿ ÃŒ–“‘÷ÿ⁄‹Áı¸	"-;OU™≥”◊Û2?AFJ^             g              l’123456_WebResourceTextEncodingNameO√/* generated javascript */
+var skin = 'udkstyle';
+var stylepath = '/skins';
+
+/* MediaWiki:Common.js */
+/* Das folgende JavaScript wird f√ºr alle Benutzer geladen. */
+
+/* MediaWiki:Udkstyle.js */
+_dhttp://entropie.digital.udk-berlin.de/index.php?title=-&action=raw&smaxage=0&gen=js&useskin=udkstyle_text/javascriptOjbplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345KLMNOPQRSTUVWXYMZ^_U$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_dhttp://entropie.digital.udk-berlin.de/index.php?title=-&action=raw&smaxage=0&gen=js&useskin=udkstyle“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uu≈CÛ»”6789BWNS.keysZNS.objectsÄ®:;<=>?@AÄ	Ä
+ÄÄÄÄÄÄ®CDEFGHIJÄÄÄÄÄÄÄÄ\X-Powered-By]Cache-ControlZKeep-AliveVServer\Content-TypeTDate^Content-LengthZConnectionYPHP/5.3.5_"private, s-maxage=0, max-age=18000_timeout=5, max=99_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-Patch_text/javascript; charset=UTF-8_Sat, 07 May 2011 12:42:43 GMTS195“./[\£\]2_NSMutableDictionary\NSDictionary√“./`a£ab2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d É â § ´ Æ ± µ π º ø ¬ ≈ » À Œ — ” ’ ◊ Ÿ € › ﬂ · „ Â Á È  ¯
+qväçìú•ßÆ∂¡√ÃŒ–“‘÷ÿ⁄‹ÂÁÈÎÌÔÒÛı"/4CNX}ëÊ'+04JWY^bv             c              ÑUutf-8‘89*:O©// remote scripting library
+// (c) copyright 2005 modernmethod, inc
+var sajax_debug_mode = false;
+var sajax_request_type = "GET";
+
+/**
+* if sajax_debug_mode is true, this function outputs given the message into 
+* the element with id = sajax_debug; if no such element exists in the document, 
+* it is injected.
+*/
+function sajax_debug(text) {
+	if (!sajax_debug_mode) return false;
+
+	var e= document.getElementById('sajax_debug');
+
+	if (!e) {
+		e= document.createElement("p");
+		e.className= 'sajax_debug';
+		e.id= 'sajax_debug';
+
+		var b= document.getElementsByTagName("body")[0];
+
+		if (b.firstChild) b.insertBefore(e, b.firstChild);
+		else b.appendChild(e);
+	}
+
+	var m= document.createElement("div");
+	m.appendChild( document.createTextNode( text ) );
+
+	e.appendChild( m );
+
+	return true;
+}
+
+/**
+* compatibility wrapper for creating a new XMLHttpRequest object.
+*/
+function sajax_init_object() {
+	sajax_debug("sajax_init_object() called..")
+	var A;
+	try {
+		// Try the new style before ActiveX so we don't
+		// unnecessarily trigger warnings in IE 7 when
+		// set to prompt about ActiveX usage
+		A = new XMLHttpRequest();
+	} catch (e) {
+		try {
+			A=new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try {
+				A=new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (oc) {
+				A=null;
+			}
+		}
+	}
+	if (!A)
+		sajax_debug("Could not create connection object.");
+
+	return A;
+}
+
+/**
+* Perform an ajax call to mediawiki. Calls are handeled by AjaxDispatcher.php
+*   func_name - the name of the function to call. Must be registered in $wgAjaxExportList
+*   args - an array of arguments to that function
+*   target - the target that will handle the result of the call. If this is a function,
+*            if will be called with the XMLHttpRequest as a parameter; if it's an input
+*            element, its value will be set to the resultText; if it's another type of
+*            element, its innerHTML will be set to the resultText.
+*
+* Example:
+*    sajax_do_call('doFoo', [1, 2, 3], document.getElementById("showFoo"));
+*
+* This will call the doFoo function via MediaWiki's AjaxDispatcher, with
+* (1, 2, 3) as the parameter list, and will show the result in the element
+* with id = showFoo
+*/
+function sajax_do_call(func_name, args, target) {
+	var i, x, n;
+	var uri;
+	var post_data;
+	uri = wgServer +
+		((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript) +
+		"?action=ajax";
+	if (sajax_request_type == "GET") {
+		if (uri.indexOf("?") == -1)
+			uri = uri + "?rs=" + encodeURIComponent(func_name);
+		else
+			uri = uri + "&rs=" + encodeURIComponent(func_name);
+		for (i = 0; i < args.length; i++)
+			uri = uri + "&rsargs[]=" + encodeURIComponent(args[i]);
+		//uri = uri + "&rsrnd=" + new Date().getTime();
+		post_data = null;
+	} else {
+		post_data = "rs=" + encodeURIComponent(func_name);
+		for (i = 0; i < args.length; i++)
+			post_data = post_data + "&rsargs[]=" + encodeURIComponent(args[i]);
+	}
+	x = sajax_init_object();
+	if (!x) {
+		alert("AJAX not supported");
+		return false;
+	}
+
+	try {
+		x.open(sajax_request_type, uri, true);
+	} catch (e) {
+		if (window.location.hostname == "localhost") {
+			alert("Your browser blocks XMLHttpRequest to 'localhost', try using a real hostname for development/testing.");
+		}
+		throw e;
+	}
+	if (sajax_request_type == "POST") {
+		x.setRequestHeader("Method", "POST " + uri + " HTTP/1.1");
+		x.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	}
+	x.setRequestHeader("Pragma", "cache=yes");
+	x.setRequestHeader("Cache-Control", "no-transform");
+	x.onreadystatechange = function() {
+		if (x.readyState != 4)
+			return;
+
+		sajax_debug("received (" + x.status + " " + x.statusText + ") " + x.responseText);
+
+		//if (x.status != 200)
+		//	alert("Error: " + x.status + " " + x.statusText + ": " + x.responseText);
+		//else
+
+		if ( typeof( target ) == 'function' ) {
+			target( x );
+		}
+		else if ( typeof( target ) == 'object' ) {
+			if ( target.tagName == 'INPUT' ) {
+				if (x.status == 200) target.value= x.responseText;
+				//else alert("Error: " + x.status + " " + x.statusText + " (" + x.responseText + ")");
+			}
+			else {
+				if (x.status == 200) target.innerHTML = x.responseText;
+				else target.innerHTML= "<div class='error'>Error: " + x.status + " " + x.statusText + " (" + x.responseText + ")</div>";
+			}
+		}
+		else {
+			alert("bad target for sajax_do_call: not a function or object: " + target);
+		}
+
+		return;
+	}
+
+	sajax_debug(func_name + " uri = " + uri + " / post = " + post_data);
+	x.send(post_data);
+	sajax_debug(func_name + " waiting..");
+	delete x;
+
+	return true;
+}
+
+/**
+ * @return boolean whether the browser supports XMLHttpRequest
+ */
+function wfSupportsAjax() {
+	var request = sajax_init_object();
+	var supportsAjax = request ? true : false;
+	delete request;
+	return supportsAjax;
+}
+
+_>http://entropie.digital.udk-berlin.de/skins/common/ajax.js?207Oibplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345MNOPQRSTUVWXYZ[\M]^bcU$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_>http://entropie.digital.udk-berlin.de/skins/common/ajax.js?207“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uu≈'#º»”6789CWNS.keysZNS.objectsÄ©:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄ©DEFGHIJKLÄÄÄÄÄÄÄÄÄZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=98Ubytes_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-Patch_application/javascript_Sat, 07 May 2011 12:42:43 GMTT4777_"3ee893-12a9-4880fd149bc00"_Wed, 02 Jun 2010 17:57:04 GMT“./_`£`a2_NSMutableDictionary\NSDictionary©“./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d Ö ã ¶ ≠ ∞ ≥ ∑ ª æ ¡ ƒ «   Õ – ” ’ ◊ Ÿ € › ﬂ · „ Â Á È Î Ú ˙
+MR[fioxÅÉäíùü©´≠Ø±≥µ∑πª≈«…ÀÕœ—”’◊‚˜	(6JP•æﬁ„!&*@MPUYm             g              {‘<=*>Oï// dependencies:
+// * ajax.js:
+  /*extern sajax_init_object, sajax_do_call */
+// * wikibits.js:
+  /*extern changeText, akeytt, hookEvent, jsMsg */
+
+// These should have been initialized in the generated js
+/*extern wgAjaxWatch, wgPageName */
+
+if(typeof wgAjaxWatch === "undefined" || !wgAjaxWatch) {
+	var wgAjaxWatch = {
+		watchMsg: "Watch",
+		unwatchMsg: "Unwatch",
+		watchingMsg: "Watching...",
+		unwatchingMsg: "Unwatching..."
+	};
+}
+
+wgAjaxWatch.supported = true; // supported on current page and by browser
+wgAjaxWatch.watching = false; // currently watching page
+wgAjaxWatch.inprogress = false; // ajax request in progress
+wgAjaxWatch.timeoutID = null; // see wgAjaxWatch.ajaxCall
+wgAjaxWatch.watchLinks = []; // "watch"/"unwatch" links
+
+wgAjaxWatch.setLinkText = function(newText) {
+	for (i = 0; i < wgAjaxWatch.watchLinks.length; i++) {
+		changeText(wgAjaxWatch.watchLinks[i], newText);
+	}
+};
+
+wgAjaxWatch.setLinkID = function(newId) {
+	// We can only set the first one
+	wgAjaxWatch.watchLinks[0].setAttribute( 'id', newId );
+	akeytt(newId); // update tooltips for Monobook
+};
+
+wgAjaxWatch.setHref = function( string ) {
+	for( i = 0; i < wgAjaxWatch.watchLinks.length; i++ ) {
+		if( string == 'watch' ) {
+			wgAjaxWatch.watchLinks[i].href = wgAjaxWatch.watchLinks[i].href
+				.replace( /&action=unwatch/, '&action=watch' );
+		} else if( string == 'unwatch' ) {
+			wgAjaxWatch.watchLinks[i].href = wgAjaxWatch.watchLinks[i].href
+				.replace( /&action=watch/, '&action=unwatch' );
+		}
+	}
+}
+
+wgAjaxWatch.ajaxCall = function() {
+	if(!wgAjaxWatch.supported) {
+		return true;
+	} else if (wgAjaxWatch.inprogress) {
+		return false;
+	}
+	if(!wfSupportsAjax()) {
+		// Lazy initialization so we don't toss up
+		// ActiveX warnings on initial page load
+		// for IE 6 users with security settings.
+		wgAjaxWatch.supported = false;
+		return true;
+	}
+
+	wgAjaxWatch.inprogress = true;
+	wgAjaxWatch.setLinkText( wgAjaxWatch.watching
+		? wgAjaxWatch.unwatchingMsg : wgAjaxWatch.watchingMsg);
+	sajax_do_call(
+		"wfAjaxWatch",
+		[wgPageName, (wgAjaxWatch.watching ? "u" : "w")], 
+		wgAjaxWatch.processResult
+	);
+	// if the request isn't done in 10 seconds, allow user to try again
+	wgAjaxWatch.timeoutID = window.setTimeout(
+		function() { wgAjaxWatch.inprogress = false; },
+		10000
+	);
+	return false;
+};
+
+wgAjaxWatch.processResult = function(request) {
+	if(!wgAjaxWatch.supported) {
+		return;
+	}
+	var response = request.responseText;
+	if( response.match(/^<w#>/) ) {
+		wgAjaxWatch.watching = true;
+		wgAjaxWatch.setLinkText(wgAjaxWatch.unwatchMsg);
+		wgAjaxWatch.setLinkID("ca-unwatch");
+		wgAjaxWatch.setHref( 'unwatch' );
+	} else if( response.match(/^<u#>/) ) {
+		wgAjaxWatch.watching = false;
+		wgAjaxWatch.setLinkText(wgAjaxWatch.watchMsg);
+		wgAjaxWatch.setLinkID("ca-watch");
+		wgAjaxWatch.setHref( 'watch' );
+	} else {
+		// Either we got a <err#> error code or it just plain broke.
+		window.location.href = wgAjaxWatch.watchLinks[0].href;
+		return;
+	}
+	jsMsg( response.substr(4), 'watch' );
+	wgAjaxWatch.inprogress = false;
+	if(wgAjaxWatch.timeoutID) {
+		window.clearTimeout(wgAjaxWatch.timeoutID);
+	}
+	// Bug 12395 - avoid some watch link confusion on edit
+	var watchthis = document.getElementById("wpWatchthis");
+	if( watchthis && response.match(/^<[uw]#>/) ) {
+		watchthis.checked = response.match(/^<w#>/) ? "checked" : "";
+	}
+	return;
+};
+
+wgAjaxWatch.onLoad = function() {
+	// This document structure hardcoding sucks.  We should make a class and
+	// toss all this out the window.
+	var el1 = document.getElementById("ca-unwatch");
+	var el2 = null;
+	if (!el1) {
+		el1 = document.getElementById("mw-unwatch-link1");
+		el2 = document.getElementById("mw-unwatch-link2");
+	}
+	if(el1) {
+		wgAjaxWatch.watching = true;
+	} else {
+		wgAjaxWatch.watching = false;
+		el1 = document.getElementById("ca-watch");
+		if (!el1) {
+			el1 = document.getElementById("mw-watch-link1");
+			el2 = document.getElementById("mw-watch-link2");
+		}
+		if(!el1) {
+			wgAjaxWatch.supported = false;
+			return;
+		}
+	}
+
+	// The id can be either for the parent (Monobook-based) or the element
+	// itself (non-Monobook)
+	wgAjaxWatch.watchLinks.push( el1.tagName.toLowerCase() == "a"
+		? el1 : el1.firstChild );
+
+	if( el2 ) {
+		wgAjaxWatch.watchLinks.push( el2 );
+	}
+
+	// I couldn't get for (watchLink in wgAjaxWatch.watchLinks) to work, if
+	// you can be my guest.
+	for( i = 0; i < wgAjaxWatch.watchLinks.length; i++ ) {
+		wgAjaxWatch.watchLinks[i].onclick = wgAjaxWatch.ajaxCall;
+	}
+	return;
+};
+
+hookEvent("load", wgAjaxWatch.onLoad);
+_Chttp://entropie.digital.udk-berlin.de/skins/common/ajaxwatch.js?207Onbplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345MNOPQRSTUVWXYZ[\M]^bcU$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_Chttp://entropie.digital.udk-berlin.de/skins/common/ajaxwatch.js?207“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uu≈0·¯»”6789CWNS.keysZNS.objectsÄ©:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄ©DEFGHIJKLÄÄÄÄÄÄÄÄÄZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=99Ubytes_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-Patch_application/javascript_Sat, 07 May 2011 12:42:43 GMTT4501_"3ee895-1195-4880fd149bc00"_Wed, 02 Jun 2010 17:57:04 GMT“./_`£`a2_NSMutableDictionary\NSDictionaryï“./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d Ö ã ¶ ≠ ∞ ≥ ∑ ª æ ¡ ƒ «   Õ – ” ’ ◊ Ÿ € › ﬂ · „ Â Á È Î Ú ˙
+RW`knt}Üàèó¢§Æ∞≤¥∂∏∫ºæ¿ ÃŒ–“‘÷ÿ⁄‹Áı¸	"-;OU™√„Ë&+/ERUZ^r             g              Ä‘@ABO âPNG
+
+   IHDR   á   á   ñÓÇÅ   	pHYs     öú   gAMA  ±é|˚Qì    cHRM  z%  ÄÉ  ˘ˇ  ÄÈ  u0  Í`  :ò  oí_≈F  ñIDATx⁄b¸œ0
+  ÄòFÉ  –hp† Ä b¯ÜH¿Ä°é·√;Üì\òáùáq¯ Ñ
+ãæAÖ  ÉÕ0
+
+<˛Ép98LÓ†(Ö¿/Ò√$0˙¬ Dp»1‹√¢0xÉ¿ ‡? Ä¡±ábº≈ 5‰Éüˇn0@ =Üüxîˇgò5ƒ√è·^ˇ•A(Ä ÇG^≈ˇ^0·¿`dÿB¿õ!@ ¡Ç„4ÂLáppp1‹'‡ø˚
+ Ä`Õ0ÇÕµ°ú:X	®Ä ,8^l≠}¬¡Òÿ⁄¿†Ú é=îVSC|g∏K@≈m@∞‡XK@˘1ÜÁC:u¨"†ö Vî≤2∆S–|“)∞1¡„ø∑
+@ !öañh≠ydò?Z•¯¸ókïrüW€cÀ∞Ë≥‡ˆ+,8 98òjÅı∫‚•"√§á◊@ °èwò1Ãcx¬‹zlÀ≥—ú˛ÉÑ@ 1˛á∂bëÄÉ2V≠œÜÂàVˇA¬ Ä∞«Ä +E ƒBlb¬—5Rbêvù·Oj•ÄjπÅ˘ı._¯)2»ÎµÁ¿.ÿWr≤ ©*à¸¢Té°ç·√† ¿˝*ê'áC%C√N†iÅjMü¥Ö0‡a»e84˘xºÍ√\<∫÷3<% ’äRÄ B&ë0cCb®|≈˙'0T~⁄Ñ?õØKË¬ˇDπØˇ Ä Bé^ÕîΩ¸hG2¸¬™ÚPË2<¬aj/û¿ ^?–uƒ∫Øˇ LÄ BGû6˝tcuÄ}‹ΩîèoX)g6!^◊4<*ß°®å¡Ø¬  ≈Ï‚‚G2xﬁq•H*≥Ò™ºç§Í2√ëJaiQ⁄H ãpº*!Ä ÇGÅ¡≥3†v=(1|¡´ÚPlÍS√±é\Øk"ï·*;	©ÑP +öÇ	îÛ⁄z√
+X]‚‹@∞∫GóÄ©vXk,bu±ú!¥ÅF"+É+Aï` @∞‡0!†úùA í&XE"T≤P)âU7±∫8Œ˛H’@TJT	 ƒÑ:täghûÓB ¶Çì`€ü´±∫ò∫ÖZ1£ Ñ∆ˇ¡€íL≈;†.¸‡=1‚u˝&Ëñ@5ƒ™Ä Ç«V _√Ï"¡‡∏‚◊T^≈"FºÆÔW®ºTQyï†J0  “'%πÄMÛˇxÁ;π‡j‡U˘ÿˆƒà◊ïF†æHÉ´$rR Ä»ô≤Œƒkp&íJpü\Ç#¶à◊%Ä7jn ÂÄ®)kÄ "gA;√&úoB´jp™ºá≥ÀGä.úAáÓj¢4 yÀ]DÄ=TlÔƒWe¬—S∏É∑j'EW<÷f!6W±‹ Ä»]≈≈–¿EÂK†Vµq◊PT~⁄¢@∞@&^ó–ïˇàr5¡≈P Ñ98h L:∫‡·ë€¿æﬁ~`˜àáÉ1∞7 ˛πLèp™‰∂TÌT¡√?óv0\ jGÄ¡ù¡<¸Û®„0]Ã@OY;èƒ∏áˇ · @£c•(c• 4:Vä h48P @ ±‡((YÅyÍ+5¨3Kf`s˘I∫X¡}ò¶Is5Nï ÑπÍÿüa∞°¸û·	∞ò…£“Ï¨8C–¥'@SÔM˜'RóC'√`çıÿÑ^
+lW‚ã‘LÜçD∫áˇ · @ò-qU) ≠Ì¯è»äˆ&ë∫@Ì¢+⁄¯*ZÄ ¢ı™„!÷ ZØ:bçtÄ ¢Ì™„!◊Ö ⁄Æ:r|Ä Çµ;ÇÿzÃèåu•B2∞ëOâ.F_.Ö6∑Å√L@% ,8º	, †Lrp(uüßD' 6†WÂƒj™J0  ZÆ:b ‘Ê§H1kâYâV	 DÀU«Ñ€áﬂ(“EÃZ‚øD´Ä ¢Â™„{@]¯¡ät}á≠∆	n√áéâ\u@¥\u¸®?ÿEëÆø#q<uπÍ ÄhªÍÿoÂv>ÔKÆ.`ÔZb§˙à®U« ÑºÍ˜Tt.ŸΩÿex¶∂-©†+è'Q]M¿@ !˜YpM,†`∞Là·"‰ÎbƒŸh√t5^ˇAò Ñå8Q∂±G«≤&F*È¬±JK™√„? ÄË±Íx-ï ˙≠:‰)!· @£#È(¡@£C«(  ÄFÉ –hp† Ä  @£¡Å h48P @ ç
+   ˆ≥¶fU @ èF:’¬ ÄÜ~é™¡@CΩÉOÂ‡ †°>¸CÂ‡ †°=8Hı‡  ÂD`zo;Ü®ø©ŒT”E•‡  b˜≥X‹Å	$·;[p7™È¢  Xp∏P«ﬂ√D<PÍ¬T®¶ãJ  Ä`¡!F0·sìl67¡∆E5]T é;‘˝#°-	¥ﬁœB @§Ôg!–z? @ ÌÂ.TÄ ⁄ã°® 4‘ó Q98 hË/§§jp –pXfK≈‡ †·±õj¡@ÿg·ÜÊ}
+É htR%8 htË •˚Yÿ8Ä™æC7wS–y?@ °á CÉ“÷πe8W21¯03COÜ∫»∞ëa¡ﬁi¿ú!∫59–¸´qÓ§WbEŸà€’¸@®5ã√e¥ö˛%Ë¥F,@À Õv†(µ √T`öC5ˇ2–}ÿ@⁄V‹Æ∆„? ÄêÉ#G„∏£§5¬r.‰l(#™Üéé~ ›à^_ı„høb∫Øˇ LÄ "ÓºR‘°cQ¥ø»¡ÂƒT…∏áéøQ∞r·ïÉ DŒ–1˛st:)é\W
+@§ãb‰TÙ‹(Ja⁄ ~Ë∏ñÄ Z¢RX%Ñ “áé≠$ä˙•÷Ä33¡^ÿ˝+Ã¿˙ÑêJ0  “áé’	zHù¢‡ ~ËòìAïÄJU¯~eÇ*¡  Äò‡YÄÿ°cNÇ‚§(8à:f&h'<upÁfÄ Ç«#ÇC«°¨O=Ùâ¢‡¯H∞1s…Ç6}™!V% ,8éP˛`Ñ˜µPvﬁ˛#†]¯¡C(˝É·ïÄj *T	 éuî#ˆ≥#∞3Í¡˝(¯¡ÄÓg†—vJª ÄF[•(≠RÄ Ì≥†ÙY h¥Gã“£ Ù¡¡;ﬁ	Ä ¢tËxÿåÜAò 4:tå 4:tå hÙ($ @‰ìV(z!ù*∑ÿF¸@î.∫1-eäüÑ*ì]L8*Z&¢+Z&D8 rp¯·h¶4Sl¿¥ÄΩAÂG%]Õ8öaòÆ∆Î? Äê◊w‹«πﬁÜ¸ı∏áÔÓ„Y©Aº.ú´ñ~bÖÑ◊&@ çÖÑr@ çÖÑr@ çÖS	 4zL% –ËQH(f–ËQH(f–ËQH0ï` @£G!°$Ä =
+	eË Ä»:¶Õ †: ÚÜéi1<(Üéà‹°c⁄¯–1@ ë?t<Ã∆; · @å‘˙  ÄF«JQ @ ç
+ †—‡@  CçñwÔKdI    IENDÆB`Ç_Fhttp://entropie.digital.udk-berlin.de/skins/common/images/udk-logo.pngOabplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345MNOPQRSTUVWXYZ[\M]^bcU$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_Fhttp://entropie.digital.udk-berlin.de/skins/common/images/udk-logo.png“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uu≈W‘Æ»”6789CWNS.keysZNS.objectsÄ©:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄ©DEFGHIJKLÄÄÄÄÄÄÄÄÄZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=98Ubytes_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-PatchYimage/png_Sat, 07 May 2011 12:42:44 GMTT3104_"3ee956-c20-4396a39a0d1c0"_Wed, 05 Sep 2007 21:38:23 GMT“./_`£`a2_NSMutableDictionary\NSDictionary “./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d Ö ã ¶ ≠ ∞ ≥ ∑ ª æ ¡ ƒ «   Õ – ” ’ ◊ Ÿ € › ﬂ · „ Â Á È Î Ú ˙
+UZcnqwÄâãíö•ß±≥µ∑πªΩø¡√Õœ—”’◊Ÿ€›ﬂÍ¯ˇ %0>RX≠∑◊‹˘"8EHMQe             g              s‘DEFOçâPNG
+
+   IHDR   X      T˙“   sBIT€·O‡  îPLTE)k™™÷Ê≈—øµ≈œÅvsî©Ñ´æ™™™Ayù«ƒzÌÏÊ[gR÷ƒM%_xqyE≥´iÿ‹ﬁVÑ£–u
+ PÑ· $∞≠6=Fîˆˆˆ∆¬§£∂ƒ«Õ–¿i
+ fôOzò LÄù£´È‘2jéËÁ€Œ‘◊–«c·Ÿxéë7äççÚÕ	÷÷…ÜïÆÏ€#^òµﬂñ:Ñ≠0;xv§ªÊÿ?ı≤Á·©Wãò±¡,vDvòNÑ¶Æ≤ï¨ÆæmùÍŸ™m÷…/!hñπƒõÖÖ∏+KÇ){•´∫≈◊“µ÷÷÷8ró¡Œ◊ﬂŸöÂ™ »∏LÖ£∑Rë±lê®“Üÿ ˝÷ï≠æƒæsÚ›5›—g!eíáßºfã¢Á÷R›≈Eåõ∂≤ø«”Õñﬁﬁ…ª√œ¿pÕ∑4[Ü&&ö2mîŒÕ≈ﬁﬁ÷û≥¿ÙÀ ·‰Ê@\ãË‰º‡◊ä‰◊4œŒæ4ÅßÎ’IdëBSZ€∫ÂŒ!ñzjù∑túµ•æÀıﬁTÜëí•≈–◊ºDä≠0NÇ_å‡ùÊ–‘â˜ËG‹‡‚L£Ë«†§ïÿŒUˇ…t°çíª¯∆Í·Œ÷‹Ë—2în[ä®y˜◊Óﬁ„◊j«πDúï-bé¨÷ŒåÊ‹ÖÏøŸŸÊ¡jöô∂Ã}8tõÂßµrùµ∆Ù‰=ÍËÕã§µÛﬂ)ƒ≈ŒbëØ’úÃÃÃﬁﬁﬁ¶ª»|ù≥"cç¨øÀü´¿Zå∆t‡œL÷Ωé´æ‡±	Mzô√¿¬ËΩRÉ£Faé\ã‹◊Æ8CgÓÿGMU]ıº˜œ{ßΩÊÊÊ)jî‘} Sâõ†¶´®≠î¥ƒ∫∞@— lïôäπµ°TYöÌ—«vÀ—‘¡æyŒÀÅ‚⁄íÎÿQ)>    	pHYs  
+  
+B¨4ò  êIDATH«Ì–˚[Su”XÃy"=4*ôÛ„OCCJ LÚÏÑçÖ\Ü∏éƒÌ;ƒç6ÊúcvF≠[ﬁ¶c‘Å3πÃK`…˙Nr]EüÈêƒıÙ<ı ?Ù<Ω8üœ˘|æﬂ◊_dÕ*YÛÕ™‰x9<˚Xj6‘‘‘ÃÆ<apÂ—˚ßèVV>_ñ®ü£b*ﬂ®‹˚errÚ£©O´5˚øâvaØuáç√·¬¬éÊ¬“Ù Ω„•è‰X	ﬁ™≈C2±ÿçª≈>±[&V˚8[pÅ[≤∞ó±≤Z{ΩﬁŸYÔçπ[xîN«„Òtçâ©ŒŒ8ÆˆzπC√íV≥Yf‰·Y>I®Kfñi[Û∂∞≠Ñ€kŸa®@köRƒª^xs}ÃëNkR=è∑’Èt^>˛€.qJìÊ!,ò5„º¿\`ŒkÌ“j[[qÆòC¯ågÖ
+∫˛Ú»I)˛ÀÌ¯;º˙È'Í==˝˝€>∆Òìw»¿^∆Cy/≥œ!!≤~0∞sÖJ∏Ω6OãgÑ¡ÜLbxÒag˙{◊n^kooœüËt÷˝_‹≈∞Ic#5p_>˜5`|)F0Ç¿∏ÇÒπ©‘`‡c	[¶iDC◊˛x˚pR“'”ß∆∆∆Œ=‡ÔÏ¶iBˇ”¯è˝.¡∑N?ﬂÿ¶€ÒŒ∆úúçÁ∑¨%küŸÚØ‡∞,¬ìÙ°µÖŒ>g«©{9--9œÂ˙Á>¨X!LQàÜ¢û˙.j–qˆﬁ•ñß[.›πËk†>Ë¶(B±1V’QW%¶˛åÁYuúù^h˝åöRfR“j•‹„â„f—Fäba  w◊ï¥%%•‰|∆>E~`kI¬Ì- h¿ff∆@ÏË® Ç‡&ì«¢NÒp¯?-Tü•n‰†æö¶•¿≥	 ÜôÑß#¨÷}G⁄ΩÅÅ˜€o≥&¨{BŸº*bËMI1;√å 02dÇ¶H±m6Ø0SMIåI˘÷àFÀiœu·&xe˝∂ÑÔ;~olO{∑˝S«ƒD…‹+Á lZÑ3&œJ]£æ2Q∆®~8ò;+ 0ÍcÉ"~Ÿ√dDª0ïB!T˝P(ZÇ˜®·πù˜KbRS˜9˙˙¶œ∂e[?˙ıÛn®ﬁ≥+GlevˆæE5d∑ÿm6ABÆÁﬂîœ§í+˝qS√PÂ˜ãDe~ªWT\≈æz©¯H_vs≥„¡Â§cŸçÈ=?«∞´<£Ïe6πÉÍ‹†!dèu©0®Pô‰z˚CF›ÑàÈ,la.PK0ä¢‹Ì¯¯˘˛ÛÈ∫˘ÒââÊ‘g∆P îÀå}M‘Î∂ÙfXÙC’¶^Uµ}4∑W>d
+
+]#’èÿî•T~ÖM QóEYò|›1è∞^)çà:Û‡Î--»Î≤®ÂGcd∆Ê*ILïBÅEzP~UUQ$AÚÀà,"A˘¡X%Y«õHrLíÒ(⁄Ÿâ6tÓx˚Jbπ≤<ì$‹]Kí∑m®%—'?π∞ã´íˇ$ºJ˘±ÈvÌcNè6    IENDÆB`Ç_Whttp://entropie.digital.udk-berlin.de/skins/common/images/poweredby_mediawiki_88x31.pngOrbplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiverØ&,-345MNOPQRSTUVWXYZ[\M]^bcU$null› !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1ÄÄÄ ÄÄÄÄÄ ”'()$+WNS.base[NS.relativeÄÄ Ä_Whttp://entropie.digital.udk-berlin.de/skins/common/images/poweredby_mediawiki_88x31.png“./01X$classesZ$classname¢12UNSURLXNSObject#A≥uu≈T±»”6789CWNS.keysZNS.objectsÄ©:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄ©DEFGHIJKLÄÄÄÄÄÄÄÄÄZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=96Ubytes_RApache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8n PHP/5.3.5 with Suhosin-PatchYimage/png_Sat, 07 May 2011 12:42:44 GMTT1933_"3ee8df-78d-4880fd149bc00"_Wed, 02 Jun 2010 17:57:04 GMT“./_`£`a2_NSMutableDictionary\NSDictionaryç“./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d Ö ã ¶ ≠ ∞ ≥ ∑ ª æ ¡ ƒ «   Õ – ” ’ ◊ Ÿ € › ﬂ · „ Â Á È Î Ú ˙
+fktÇàëöú£´∂∏¬ƒ∆» ÃŒ–“‘ﬁ‡‚‰ÊËÍÏÓ˚	"16AOciæ»ËÌ
+*/3IVY^bv             g              Ñ‘HIJKO
+Ó         ∞   F         (  ˆ         h          h  Ü  (                Ä                   ˇˇˇ     ˇˇÜlˇˇÅ›´Ü,ˇˇÅ◊´ÜLˇˇÅ›øÜ<ˇˇÅˇˇÜD›´ÅˇˇÜL’´ÅˇˇÜlﬂ˚ÅˇˇÜ\ˇˇÅˇˇÜlÄÅÄÜ,ÄÅÄÜLÄÅÄÜ<ÄÅÄÜDÄÅÄÜLÄÅÄÜlÄÅÄÜ\ˇˇÅ(                ¿                   ˇˇˇ Û¸ dˇ › ÑÚ • F ‘   Í´ ∑ d  ,V :qê ¿¿¿ ÄÄÄ @@@     ˇˇˇˇˇˇˇˇÛ333333?Û3000?Û333333?Û3000?Û333333?Û3033?Û333333?Û333333?Û3000?Û333333?Û000?Û333333?Û33330?Û333333?ˇˇˇˇˇˇˇˇˇˇÜlÄÅÄÜ,ÄÅÄÜLÄÅÄÜ<ÄÅÄÜDÄÅÄÜLÄÅÄÜlÄÅÄÜ\ˇˇÅ(                @                  ˇˇˇ 3 ˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ ˇˇˇ                           ˇˇÜlÄÅÄÜ,ÄÅÄÜLÄÅÄÜ<ÄÅÄÜDÄÅÄÜLÄÅÄÜlÄÅÄÜ\ˇˇÅ(                @                                                                     3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ      3 ˇˇˇˇ3 ˇ3 ˇ3 ˇˇˇˇ3 ˇ3 ˇˇˇˇ3 ˇˇˇˇ3 ˇˇˇˇ3 ˇ      3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ      3 ˇˇˇˇ3 ˇˇˇˇ3 ˇ3 ˇ3 ˇ3 ˇˇˇˇ3 ˇˇˇˇ3 ˇˇˇˇ3 ˇ      3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ      3 ˇˇˇˇ3 ˇ3 ˇ3 ˇˇˇˇ3 ˇ3 ˇˇˇˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ      3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ      3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ      3 ˇˇˇˇ3 ˇ3 ˇ3 ˇˇˇˇ3 ˇ3 ˇˇˇˇ3 ˇˇˇˇ3 ˇˇˇˇ3 ˇ      3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ      3 ˇˇˇˇ3 ˇˇˇˇ3 ˇˇˇˇ3 ˇ3 ˇˇˇˇ3 ˇˇˇˇ3 ˇˇˇˇ3 ˇ      3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ      3 ˇˇˇˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇˇˇˇ3 ˇ      3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ3 ˇ                                                   ˇˇÜlÄÅÄÜ,ÄÅÄÜLÄÅÄÜ<ÄÅÄÜDÄÅÄÜLÄÅÄÜlÄÅÄÜ\ˇˇÅ_1http://entropie.digital.udk-berlin.de/favicon.ico\image/x-iconObplist00‘	
+X$versionT$topY$archiverX$objects Ü†—_WebResourceResponseÄ_NSKeyedArchiver´#)*0"1234U$null€ !"V$classR$3R$8R$5R$6R$4R$7R$2R$9R$0R$1Ä
+ÄÄÄÄÄÄÄ	 ”$%&'(WNS.base[NS.relativeÄÄ Ä_1http://entropie.digital.udk-berlin.de/favicon.ico“+,-.X$classesZ$classname¢./UNSURLXNSObject#A≥uw∏S]\image/x-iconP#Ôˇˇˇˇˇˇ“+,56¢6/]NSURLResponse     ) 2 7 : P R d p v ç î ó ö ù † £ ¶ © ¨ Ø ≤ ¥ ∂ ∏ ∫ º æ ¿ ¬ ƒ ∆ » œ ◊ „ Â Á È"+69?HQ^_hmp             7              ~’M1NOPQR_WebResourceFrameNameO<o<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de" dir="ltr"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta name="generator" content="MediaWiki 1.15.4">
+		<meta name="keywords" content="Papes110414-resources">
+		<link rel="alternate" type="application/x-wiki" title="Bearbeiten" href="/index.php?title=Papes110414-resources&amp;action=edit">
+		<link rel="edit" title="Bearbeiten" href="/index.php?title=Papes110414-resources&amp;action=edit">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Entropie (de)">
+		<link rel="alternate" type="application/rss+xml" title="RSS-Feed f√ºr ‚ÄûEntropie‚Äú" href="/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=rss">
+		<link rel="alternate" type="application/atom+xml" title="Atom-Feed f√ºr ‚ÄûEntropie‚Äú" href="/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom">
+		<title>Papes110414-resources ‚Äì Entropie</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/skins/udkstyle/main.css?207"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="/skins/common/commonPrint.css?207">
+		<link rel="stylesheet" type="text/css" media="handheld" href="/skins/udkstyle/handheld.css?207">
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/skins/udkstyle/IE50Fixes.css?207";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/skins/udkstyle/IE55Fixes.css?207";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/skins/udkstyle/IE60Fixes.css?207";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/skins/udkstyle/IE70Fixes.css?207";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type="text/javascript">/*<![CDATA[*/
+		var skin = "udkstyle";
+		var stylepath = "/skins";
+		var wgArticlePath = "/wiki/$1";
+		var wgScriptPath = "";
+		var wgScript = "/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://entropie.digital.udk-berlin.de";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Papes110414-resources";
+		var wgTitle = "Papes110414-resources";
+		var wgAction = "view";
+		var wgArticleId = "3179";
+		var wgIsArticle = true;
+		var wgUserName = "F0";
+		var wgUserGroups = ["*", "user", "autoconfirmed"];
+		var wgUserLanguage = "de";
+		var wgContentLanguage = "de";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 13266;
+		var wgVersion = "1.15.4";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = [",	.", ".	,"];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		var wgAjaxWatch = {"watchMsg": "Beobachten", "unwatchMsg": "nicht mehr beobachten", "watchingMsg": "Beobachten ‚Ä¶", "unwatchingMsg": "Nicht beobachten ‚Ä¶"};
+		/*]]>*/</script>
+                
+		<script type="text/javascript" src="/skins/common/wikibits.js?207"><!-- wikibits js --></script><style type="text/css">@import "/skins/udkstyle/KHTMLFixes.css";</style>
+		<script type="text/javascript" src="/index.php?title=-&amp;action=raw&amp;smaxage=0&amp;gen=js&amp;useskin=udkstyle"><!-- site js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/skins/common/ajaxwatch.js?207"></script>
+	</head><body class="mediawiki  ltr ns-0 ns-subject page-Papes110414-resources">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Papes110414-resources</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">Aus Entropie</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Wechseln zu: <a href="#column-one">Navigation</a>, <a href="#searchInput">Suche</a></div>			<!-- start content -->
+			<p>Boomerang by Richard Serra
+</p><p><a href="http://www.youtube.com/watch?v=8z32JTnRrHc" class="external autonumber" title="http://www.youtube.com/watch?v=8z32JTnRrHc" rel="nofollow">[1]</a>
+</p><p>283millisec = 0.283 seconds
+</p><p><br>
+</p>
+<hr>
+<p>download and install pure-data extended
+</p><p><a href="http://puredata.info/" class="external autonumber" title="http://puredata.info/" rel="nofollow">[2]</a>
+</p>
+<hr>
+<a name="my_simple_delay_1" id="my_simple_delay_1"></a><h2><span class="editsection">[<a href="/index.php?title=Papes110414-resources&amp;action=edit&amp;section=1" title="Abschnitt bearbeiten: my simple delay 1">Bearbeiten</a>]</span> <span class="mw-headline"> my simple delay 1 </span></h2>
+<p>copy the following into a plain text document and save as 'mysimpledelay.pd'
+</p>
+<pre>#N canvas 663 80 682 406 24;
+#X obj 71 46 adc~;
+#X obj 55 295 dac~;
+#X obj 60 170 delay~ 44100;
+#X floatatom 224 121 10 0 0 0 - - -;
+#X obj 225 73 * 44100;
+#X floatatom 225 19 5 0 1 0 - - -;
+#X text 366 52 shift+click and drag;
+#X text 304 15 delaytime in sec (0-1);
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 2 0 1 1;
+#X connect 3 0 2 1;
+#X connect 4 0 3 0;
+#X connect 5 0 4 0;
+</pre>
+<hr>
+<a name="my_simple_delay_2" id="my_simple_delay_2"></a><h2><span class="editsection">[<a href="/index.php?title=Papes110414-resources&amp;action=edit&amp;section=2" title="Abschnitt bearbeiten: my simple delay 2">Bearbeiten</a>]</span> <span class="mw-headline"> my simple delay 2 </span></h2>
+<p>copy the following into a plain text document and save as 'mysimpledelay2.pd'
+</p>
+<pre>#N canvas 516 40 869 558 24;
+#X obj 111 51 adc~;
+#X obj 193 475 dac~;
+#X obj 80 246 delay~ 44100;
+#X obj 275 248 delay~ 44100;
+#X obj 475 249 delay~ 44100;
+#X obj 96 372 *~ 0.1;
+#X obj 479 378 *~ 0.3;
+#X obj 191 179 * 44100;
+#X obj 373 186 * 44100;
+#X obj 573 190 * 44100;
+#X floatatom 185 137 5 0 0 0 - - -;
+#X floatatom 369 144 5 0 0 0 - - -;
+#X floatatom 569 149 5 0 0 0 - - -;
+#X obj 274 371 *~ 0.8;
+#X floatatom 168 324 5 0 1.5 0 amp - -;
+#X floatatom 332 323 5 0 1.5 0 amp - -;
+#X floatatom 552 329 5 0 1.5 0 amp - -;
+#X obj 353 37 loadbang;
+#X msg 308 79 0.1;
+#X msg 374 81 0.283;
+#X msg 467 78 0.5;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 0 0 4 0;
+#X connect 2 0 5 0;
+#X connect 3 0 13 0;
+#X connect 4 0 6 0;
+#X connect 5 0 1 0;
+#X connect 5 0 1 1;
+#X connect 6 0 1 0;
+#X connect 6 0 1 1;
+#X connect 7 0 2 1;
+#X connect 8 0 3 1;
+#X connect 9 0 4 1;
+#X connect 10 0 7 0;
+#X connect 11 0 8 0;
+#X connect 12 0 9 0;
+#X connect 13 0 1 0;
+#X connect 13 0 1 1;
+#X connect 14 0 5 1;
+#X connect 15 0 13 1;
+#X connect 16 0 6 1;
+#X connect 17 0 18 0;
+#X connect 17 0 19 0;
+#X connect 17 0 20 0;
+#X connect 18 0 10 0;
+#X connect 19 0 11 0;
+#X connect 20 0 12 0;
+</pre>
+<p><br>
+</p>
+<hr>
+<a name="my_simple_echo" id="my_simple_echo"></a><h2><span class="editsection">[<a href="/index.php?title=Papes110414-resources&amp;action=edit&amp;section=3" title="Abschnitt bearbeiten: my simple echo">Bearbeiten</a>]</span> <span class="mw-headline"> my simple echo </span></h2>
+<p>copy the following into a plain text document and save as 'mysimpledelay.pd'
+</p>
+<pre>#N canvas 422 22 816 525 24;
+#X obj 71 46 adc~;
+#X obj 45 342 dac~;
+#X obj 70 208 delay~ 44100;
+#X floatatom 234 159 10 0 0 0 - - -;
+#X obj 235 111 * 44100;
+#X floatatom 235 57 5 0 0 0 - - -;
+#X obj 221 278 send~ echo;
+#X obj 221 328 receive~ echo;
+#X obj 221 378 delay~ 44100;
+#X obj 218 424 *~ 0.5;
+#X obj 445 356 * 44100;
+#X floatatom 455 312 5 0 0 0 - - -;
+#X text 314 49 delay time in seconds (use 0.283);
+#X text 444 270 echo time in seconds;
+#X obj 74 136 +~;
+#X floatatom 397 437 5 0 0 0 - - -;
+#X text 478 435 echo amplitude;
+#X obj 462 135 loadbang;
+#X msg 457 178 0.283;
+#X msg 542 185 0.1;
+#X connect 0 0 14 0;
+#X connect 2 0 1 0;
+#X connect 2 0 1 1;
+#X connect 2 0 6 0;
+#X connect 3 0 2 1;
+#X connect 4 0 3 0;
+#X connect 5 0 4 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 14 1;
+#X connect 10 0 8 1;
+#X connect 11 0 10 0;
+#X connect 14 0 2 0;
+#X connect 15 0 9 1;
+#X connect 17 0 18 0;
+#X connect 17 0 19 0;
+#X connect 18 0 5 0;
+#X connect 19 0 11 0;
+#X connect 19 0 15 0;
+</pre>
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key entropie:pcache:idhash:3179-0!1!0!!de!2 and timestamp 20110507124249 -->
+<div class="printfooter">
+Von ‚Äû<a href="http://entropie.digital.udk-berlin.de/wiki/Papes110414-resources">http://entropie.digital.udk-berlin.de/wiki/Papes110414-resources</a>‚Äú</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Ansichten</h5>
+		<div class="pBody">
+			<ul>
+					 <li id="ca-nstab-main" class="selected"><a href="/wiki/Papes110414-resources" title="Seiteninhalt anzeigen [ctrl-alt-c]" accesskey="c">Seite</a></li>
+					 <li id="ca-talk" class="new"><a href="/index.php?title=Diskussion:Papes110414-resources&amp;action=edit&amp;redlink=1" title="Diskussion zum Seiteninhalt [ctrl-alt-t]" accesskey="t">Diskussion</a></li>
+					 <li id="ca-edit"><a href="/index.php?title=Papes110414-resources&amp;action=edit" title="Seite bearbeiten. Bitte vor dem Speichern die Vorschaufunktion benutzen. [ctrl-alt-e]" accesskey="e">Bearbeiten</a></li>
+					 <li id="ca-history"><a href="/index.php?title=Papes110414-resources&amp;action=history" title="Fr√ºhere Versionen dieser Seite [ctrl-alt-h]" accesskey="h">Versionen/Autoren</a></li>
+					 <li id="ca-move"><a href="/wiki/Spezial:Verschieben/Papes110414-resources" title="Diese Seite verschieben [ctrl-alt-m]" accesskey="m">Verschieben</a></li>
+					 <li id="ca-watch"><a href="/index.php?title=Papes110414-resources&amp;action=watch" title="Diese Seite zur pers√∂nlichen Beobachtungsliste hinzuf√ºgen [ctrl-alt-w]" accesskey="w">Beobachten</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Pers√∂nliche Werkzeuge</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-userpage"><a href="/wiki/Benutzer:F0" title="Deine Benutzerseite [ctrl-alt-.]" accesskey="." class="new">F0</a></li>
+				<li id="pt-mytalk"><a href="/wiki/Benutzer_Diskussion:F0" title="Deine Diskussionsseite [ctrl-alt-n]" accesskey="n" class="new">Eigene Diskussion</a></li>
+				<li id="pt-preferences"><a href="/wiki/Spezial:Einstellungen" title="Eigene Einstellungen">Einstellungen</a></li>
+				<li id="pt-watchlist"><a href="/wiki/Spezial:Beobachtungsliste" title="Liste der beobachteten Seiten [ctrl-alt-l]" accesskey="l">Beobachtungsliste</a></li>
+				<li id="pt-mycontris"><a href="/wiki/Spezial:Beitr%C3%A4ge/F0" title="Liste deiner Beitr√§ge [ctrl-alt-y]" accesskey="y">Eigene Beitr√§ge</a></li>
+				<li id="pt-logout"><a href="/index.php?title=Spezial:Abmelden&amp;returnto=Papes110414-resources" title="Abmelden">Abmelden</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/skins/common/images/udk-logo.png);" href="/wiki/Hauptseite" title="Hauptseite anzeigen"></a>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Suche</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/wiki/Spezial:Suche" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" title="Entropie durchsuchen [ctrl-alt-f]" accesskey="f" value="">
+				<input type="submit" name="go" class="searchButton" id="searchGoButton" value="Seite">&nbsp;
+				<input type="submit" name="fulltext" class="searchButton" id="mw-searchButton" value="Suchen">
+			</div></form>
+		</div>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+		<div class="portlet" id="p-navigation">
+		<h5>Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-mainpage-description"><a href="/wiki/Hauptseite">Hauptseite</a></li>
+				<li id="n-portal"><a href="/wiki/Entropie:Gemeinschafts-Portal" title="√úber das Portal, was du tun kannst, wo was zu finden ist">Entropie-Portal</a></li>
+				<li id="n-currentevents"><a href="/wiki/Entropie:Aktuelle_Ereignisse" title="Hintergrundinformationen zu aktuellen Ereignissen">Termine</a></li>
+				<li id="n-recentchanges"><a href="/wiki/Spezial:Letzte_%C3%84nderungen" title="Liste der letzten √Ñnderungen in Entropie [ctrl-alt-r]" accesskey="r">Letzte √Ñnderungen</a></li>
+				<li id="n-randompage"><a href="/wiki/Spezial:Zuf%C3%A4llige_Seite" title="Zuf√§llige Seite [ctrl-alt-x]" accesskey="x">Zuf√§llige Seite</a></li>
+				<li id="n-help"><a href="/wiki/Hilfe:Inhaltsverzeichnis" title="Hilfeseite anzeigen">Hilfe</a></li>
+			</ul>
+		</div>
+	</div>
+		<div class="portlet" id="p-SEARCH">
+		<h5>SEARCH</h5>
+		<div class="pBody">
+			<ul>
+			</ul>
+		</div>
+	</div>
+		<div class="portlet" id="p-TOOLBOX">
+		<h5>TOOLBOX</h5>
+		<div class="pBody">
+			<ul>
+			</ul>
+		</div>
+	</div>
+		<div class="portlet" id="p-LANGUAGES">
+		<h5>LANGUAGES</h5>
+		<div class="pBody">
+			<ul>
+			</ul>
+		</div>
+	</div>
+		
+	<div class="portlet" id="p-tb">
+		<h5>Werkzeuge</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/wiki/Spezial:Linkliste/Papes110414-resources" title="Liste aller Seiten, die hierher zeigen [ctrl-alt-j]" accesskey="j">Links auf diese Seite</a></li>
+				<li id="t-recentchangeslinked"><a href="/wiki/Spezial:%C3%84nderungen_an_verlinkten_Seiten/Papes110414-resources" title="Letzte √Ñnderungen an Seiten, die von hier verlinkt sind [ctrl-alt-k]" accesskey="k">√Ñnderungen an verlinkten Seiten</a></li>
+<li id="t-upload"><a href="/wiki/Spezial:Hochladen" title="Dateien hochladen [ctrl-alt-u]" accesskey="u">Hochladen</a></li>
+<li id="t-specialpages"><a href="/wiki/Spezial:Spezialseiten" title="Liste aller Spezialseiten [ctrl-alt-q]" accesskey="q">Spezialseiten</a></li>
+				<li id="t-print"><a href="/index.php?title=Papes110414-resources&amp;printable=yes" title="Druckansicht dieser Seite [ctrl-alt-p]" accesskey="p">Druckversion</a></li>				<li id="t-permalink"><a href="/index.php?title=Papes110414-resources&amp;oldid=13266" title="Dauerhafter Link zu dieser Seitenversion">Permanenter Link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"></a></div>
+			<ul id="f-list">
+				<li id="lastmod"> Diese Seite wurde zuletzt am 18. April 2011 um 23:41 Uhr ge√§ndert.</li>
+				<li id="viewcount">Diese Seite wurde bisher 26-mal abgerufen.</li>
+				<li id="privacy"><a href="/wiki/Entropie:Datenschutz" title="Entropie:Datenschutz">Datenschutz</a></li>
+				<li id="about"><a href="/wiki/Entropie:%C3%9Cber" title="Entropie:√úber">√úber Entropie</a></li>
+				<li id="disclaimer"><a href="/wiki/Entropie:Impressum" title="Entropie:Impressum">Impressum</a></li>
+			</ul>
+		</div>
+		
+	
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served in 0.156 secs. -->
+</body></html>_@http://entropie.digital.udk-berlin.de/wiki/Papes110414-resourcesPYtext/htmlUUTF-8        1  C  L  ^  m  É  ô rö rﬁ rÁ wI wR wá w… w” |- |6 |ﬁ }" }, Åâ Åí Ç§ ÇË áH áQ ä˘ ã9 èî èù ¢ï ¢ﬁ ßD ßM\¬À~R~ó~∞É"É+ÉôÉﬂà=àHàfâ,âìâ•ééé"†œ°•}•Ü∑∑eª◊ª‡»»MÃ≤Ãª‘L‘¶ŸŸ%‰‰K‰XÊhÊsÊä"˝#@#A#K             S             #Q
