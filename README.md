@@ -18,18 +18,13 @@ dates
 - [x] 26may: [`110526`](https://github.com/redFrik/udk05-Audiovisual_Performance_Systems/blob/master/110526) osc
 - [x] 02jun: CANCELLED
 - [x] 09jun: [`110609`](https://github.com/redFrik/udk05-Audiovisual_Performance_Systems/blob/master/110609)
-- [x] 10jun: 
+- [x] 10jun: `110610`
 - [x] 16jun: CANCELLED
 - [x] 23jun: [`110623`](https://github.com/redFrik/udk05-Audiovisual_Performance_Systems/blob/master/110623)
-- [x] 24jun: [`110624`](https://github.com/redFrik/udk05-Audiovisual_Performance_Systems/blob/master/110624)
+- [x] 24jun: `110624`
 
 cybernetics
 -----------
 * daniel recommended: heinz von förster - quantum physics and memory <http://en.wikipedia.org/wiki/Heinz_von_Foerster> and <http://en.wikipedia.org/wiki/Laws_of_Form>
 * ruben recommended: quentin meillassoux <http://es.scribd.com/doc/21872567/After-Finitude-An-Essay-on-the-Necessity-of-Contingency>
 * see also: 'the brain of the firm' - Stafford Beer and 'Feedback thought in social science and systems theory' - George P. Richardson
-
-links
------
-* <http://opentsps.com/documentation>
-* <https://vimeo.com/channels/hexstatic>
