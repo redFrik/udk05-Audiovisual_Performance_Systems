@@ -1,4 +1,4 @@
-predator - state of the art tracking		http://info.ee.surrey.ac.uk/Personal/Z.Kalal/tld.html
+predator - state of the art tracking	http://info.ee.surrey.ac.uk/Personal/Z.Kalal/tld.html
 
 kinect - exempels						http://www.creativeapplications.net/maxmsp/kinect-one-week-later-processing-of-cinder-maxmsp/
 opencv - exempel/overview				http://hangar.org/wikis/lab/doku.php?id=start:puredata_opencv

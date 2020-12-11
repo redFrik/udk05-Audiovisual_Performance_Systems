@@ -1,4 +1,4 @@
-//http://www.youtube.com/watch?v=m5S3_dmj8BU
+//https://www.youtube.com/watch?v=m5S3_dmj8BU
 
 s.boot
 Ndef(\boomerang).play
@@ -13,7 +13,7 @@ Ndef(\boomerang).stop
 
 //--
 s.boot;
-a= {|gain= 2| var in= AudioIn.ar(1)!2; DelayN.ar(in, 0.283, 0.283, gain, in*0.5)}.play;
+a= {|gain= 2| var in= SoundIn.ar(0)!2; DelayN.ar(in, 0.283, 0.283, gain, in*0.5)}.play;
 a.set(\gain, 1);
 a.free;
 

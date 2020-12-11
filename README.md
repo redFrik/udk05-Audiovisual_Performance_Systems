@@ -25,6 +25,6 @@ dates
 
 cybernetics
 -----------
-* daniel recommended: heinz von förster - quantum physics and memory <http://en.wikipedia.org/wiki/Heinz_von_Foerster> and <http://en.wikipedia.org/wiki/Laws_of_Form>
-* ruben recommended: quentin meillassoux <http://es.scribd.com/doc/21872567/After-Finitude-An-Essay-on-the-Necessity-of-Contingency>
-* see also: 'the brain of the firm' - Stafford Beer and 'Feedback thought in social science and systems theory' - George P. Richardson
+* daniel recommended: heinz von förster - quantum physics and memory <https://en.wikipedia.org/wiki/Heinz_von_Foerster> and <https://en.wikipedia.org/wiki/Laws_of_Form>
+* ruben recommended: quentin meillassoux <https://es.scribd.com/doc/21872567/After-Finitude-An-Essay-on-the-Necessity-of-Contingency>
+* see also: 'Brain of the Firm' - Stafford Beer and 'Feedback Thought in Social Science and Systems Theory' - George P. Richardson
